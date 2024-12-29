@@ -1,0 +1,22 @@
+dateModified: 1735483376
+email:
+  fromEmail: alan@craftcode.co.uk
+  fromName: 'Rebecca Luff'
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    44796fd5-bb11-438e-893b-74cd6f43996f: 'Rebecca Luff' # Rebecca Luff
+    b83563e4-d016-4de4-9291-d211ee33f97d: 'Rebecca Luff' # Rebecca Luff
+system:
+  edition: solo
+  live: true
+  name: 'Rebecca Luff'
+  schemaVersion: 5.5.0.0
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true
