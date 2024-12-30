@@ -11,17 +11,49 @@
 use craft\config\GeneralConfig;
 use craft\helpers\App;
 
-return GeneralConfig::create()
-    // Set the default week start day for date pickers (0 = Sunday, 1 = Monday, etc.)
-    ->defaultWeekStartDay(1)
-    // Prevent generated URLs from including "index.php"
-    ->omitScriptNameInUrls()
-    // Preload Single entries as Twig variables
-    ->preloadSingles()
-    // Prevent user enumeration attacks
-    ->preventUserEnumeration()
-    // Set the @webroot alias so the clear-caches command knows where to find CP resources
-    ->aliases([
-        '@webroot' => dirname(__DIR__) . '/web',
-    ])
-;
+return [
+    // Global settings
+    '*' => [
+        // Default Week Start Day (0 = Sunday, 1 = Monday...)
+        'defaultWeekStartDay' => 0,
+
+        // Enable CSRF Protection (recommended)
+        'enableCsrfProtection' => true,
+//        'allowAdminChanges' =>false,
+
+        // Whether generated URLs should omit "index.php"
+        'omitScriptNameInUrls' => true,
+
+        'permissionsPolicyHeader' => null,
+        // Control Panel trigger word
+        'cpTrigger' => 'admin',
+
+        // The secure key Craft will use for hashing and encrypting data
+        'securityKey' => getenv('SECURITY_KEY'),
+        'aliases' => [
+            '@web' => getenv('CRAFTENV_BASE_URL'),
+            '@webroot' => dirname(__DIR__) . '/public_html',
+            '@assetBaseUrl' => getenv('ASSET_BASE_URL'),
+            '@assetBasePath' => getenv('ASSET_BASE_PATH'),
+            '@baseUrl' => getenv('PRIMARY_SITE_URL'),
+            '@basePath' => getenv('CRAFTENV_BASE_PATH')
+        ],
+        'errorTemplatePrefix' => "/errors/",
+    ],
+
+    // Dev environment settings
+    'dev' => [
+        // Base site URL
+       //'baseUrl' => getenv('CRAFTENV_BASE_URL'),
+       'backupCommand' => getenv('BACKUP_COMMAND'),
+       'restoreCommand' => getenv('RESTORE_COMMAND'),
+        // Dev Mode (see https://craftcms.com/support/dev-mode)
+        'devMode' => true,
+        'enableTemplateCaching' => false,
+    ],
+
+    // Production environment settings
+    'production' => [
+      
+    ],
+];

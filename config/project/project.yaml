@@ -1,12 +1,114 @@
-dateModified: 1735483376
+dateModified: 1735502015
 email:
   fromEmail: alan@craftcode.co.uk
   fromName: 'Rebecca Luff'
   transportType: craft\mail\transportadapters\Sendmail
+fs:
+  images:
+    hasUrls: true
+    name: Images
+    settings:
+      path: $ASSET_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSET_BASE_URL
 meta:
   __names__:
+    0a0a61db-c42b-49a9-b6cd-9a96be13752e: intro # intro
+    0aad6b5b-d3fa-4b2d-b5c5-0537467930b4: Category # Category
+    0feb6d1d-66c8-449f-a182-59ce63dc231a: 'Unsplash color' # Unsplash color
+    1a2a8073-e10c-432b-841d-63f885e96036: Menu # Menu
+    02a30bda-d2b5-41f6-ba9b-8ce888e8e6ae: Body # Body
+    2f1244a3-6894-4944-9f5a-f9810dc55296: LinkedIn # LinkedIn
+    3b9ecd0a-e61a-481d-8254-4787941102e7: Simple # Simple
+    7ec31d37-214a-451f-af7c-9c9bef77ab66: Telephone # Telephone
+    27fa1076-49b0-4d82-97c2-9b92351cce5a: page # page
+    57a9f983-128e-4777-998d-57ad443ae51d: 'Unsplash url' # Unsplash url
+    74fc919e-4e7c-4b41-a8b7-4226de6ef603: Work # Work
+    92bca146-99c6-485b-af9e-f66ce402a4bd: 'Work case studies' # Work case studies
+    95d542d0-1ea8-41c8-9ae0-d83d5751f5c5: 'Contact links' # Contact links
+    97e342cd-a55e-42c9-99d5-de73541a4860: Images # Images
+    235b3d71-67ac-4db5-b0cf-c6324bccb41f: Email # Email
     44796fd5-bb11-438e-893b-74cd6f43996f: 'Rebecca Luff' # Rebecca Luff
+    a8461432-9f67-4ed1-ac53-5fb464f68ac8: Pages # Pages
+    b2b15e5c-80c6-4bff-b6d1-e09b1bb48fac: 'Unsplash author' # Unsplash author
+    b9c4f964-3733-467b-b83e-e3802aa7b65f: SEO # SEO
     b83563e4-d016-4de4-9291-d211ee33f97d: 'Rebecca Luff' # Rebecca Luff
+    ea817c34-179d-4093-a610-ec2c1a4b1cac: 'Category description' # Category description
+    ebbb5274-bb4d-4943-9eb1-32bd320b8ad3: 'Case study' # Case study
+    ece3f4c3-b556-4a0d-a0b4-9eed0b80a916: Menu # Menu
+    edabf163-bcdc-46d6-8b79-16af15f8c9a7: 'entry link' # entry link
+    fd166723-04bc-4086-be93-9377832798d5: 'Custom link' # Custom link
+plugins:
+  ckeditor:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0.0
+  cleantalk:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
+  minify:
+    edition: standard
+    enabled: false
+    schemaVersion: 1.0.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
+    settings:
+      description: ''
+      facebookAppId: ''
+      metaTemplate: ''
+      removeAlternateUrls: ''
+      robots:
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+        - ''
+      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
+      sitemapLimit: '1000'
+      sitemapName: sitemap
+      socialImage: ''
+      title:
+        -
+          __assoc__:
+            -
+              - key
+              - '1'
+            -
+              - locked
+              - '0'
+            -
+              - template
+              - '{title}'
+        -
+          __assoc__:
+            -
+              - key
+              - '2'
+            -
+              - locked
+              - '1'
+            -
+              - template
+              - ' - {{ siteName }}'
+      titleSuffix: null
+      twitterHandle: ''
+  splash:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
+    settings:
+      authorField: unsplashAuthor
+      authorUrlField: unsplashUrl
+      colorField: null
+      volume: 1
+  wheelform:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.0
 system:
   edition: solo
   live: true

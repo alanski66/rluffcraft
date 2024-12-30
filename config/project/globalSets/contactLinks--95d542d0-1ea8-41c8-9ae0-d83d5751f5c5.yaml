@@ -1,0 +1,60 @@
+fieldLayouts:
+  f49bc7e8-f475-4d48-808a-aafc985be699:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-12-29T17:14:02+00:00'
+            elementCondition: null
+            fieldUid: 2f1244a3-6894-4944-9f5a-f9810dc55296 # LinkedIn
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 94a16deb-c450-4646-b353-af5f7c61e6a5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-29T17:14:02+00:00'
+            elementCondition: null
+            fieldUid: 7ec31d37-214a-451f-af7c-9c9bef77ab66 # Telephone
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b4275b00-6316-428a-93fa-145100994c0d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-29T17:14:02+00:00'
+            elementCondition: null
+            fieldUid: 235b3d71-67ac-4db5-b0cf-c6324bccb41f # Email
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13c82c91-c3ef-4c12-b582-b276c0db73a2
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Contact routes'
+        uid: 6784a12b-df9b-4ff9-98dd-6ec99ab449ed
+        userCondition: null
+handle: contactLinks
+name: 'Contact links'
+sortOrder: 1
