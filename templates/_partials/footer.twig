@@ -1,24 +1,124 @@
+{% import '_macros' as macros %}
+
+<div class="container-fluid bg-light-subtle p-0 m-0">  
+<div class="container py-5 ">
+	<div class="row">
+		<div class="col-md-12 text-center">
+            <h4 class="fw-lighter">Organisations I've worked with</h4>
+			<div class="lc-block">
+				<div id="carouselLogos" class="carousel slide pt-5 pb-4" data-bs-ride="carousel">
+
+					<div class="carousel-inner px-5">
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-6 col-lg-2 align-self-center">
+									<img class="d-block w-100 px-3 mb-3" src="https://cdn.livecanvas.com/media/logos/11.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/2.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/3.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/12.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/5.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/6.png" alt="">
+								</div>
+							</div>
+
+						</div>
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-6 col-lg-2 align-self-center">
+									<img class="d-block w-100 px-3 mb-3" src="https://cdn.livecanvas.com/media/logos/11.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/2.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/3.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/12.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/5.png" alt="">
+								</div>
+								<div class="col-6 col-lg-2  align-self-center">
+									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/6.png" alt="">
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+
+					<!--
+	<ol class="carousel-indicators list-unstyled position-relative mt-3">
+		<li data-bs-target="#carouselLogos" data-bs-slide-to="0" class="active bg-dark carousel-control-prev-icon"></li>
+		<li data-bs-target="#carouselLogos" data-bs-slide-to="1" class="bg-dark"></li>
+	</ol>
+	-->
+					<div class="d-none w-100 px-3 text-center mt-4">
+						<a class="carousel-control-prev position-relative d-inline me-4" href="#carouselLogos" data-bs-slide="prev">
+							<svg width="2em" height="2em" viewBox="0 0 16 16" class="text-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"></path>
+							</svg>
+							<span class="visually-hidden">Previous</span>
+						</a>
+						<a class="carousel-control-next position-relative d-inline" href="#carouselLogos" data-bs-slide="next">
+							<svg width="2em" height="2em" viewBox="0 0 16 16" class="text-dark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"></path>
+							</svg>
+							<span class="visually-hidden">Next</span>
+						</a>
+                    </div>
+				</div>
+			</div><!-- /lc-block -->
+		</div><!-- /col -->
+	</div>
+</div>
+</div>
 <!-- Footer -->
-<footer class="footer bg-dark-stable py-8">
+<div class="container-fluid bg-dark-subtle">
     <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-          <div class="col-md-4 d-flex align-items-center">
-            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-            </a>
-            <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
-          </div>
+    <footer class="d-flex flex-wrap justify-content-between align-items-center  border-top">
+      <p class="col-md-4 mb-0 text-body-secondary">© {{ 'now' | date('Y') }} Rebecca Luff</p>
+  
+      <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+  
+      <ul class="nav col-md-4 justify-content-end">
+        {% set menu = craft.entries.section('menu').all() %}
+
+
+        {% for entry in menu %}
+        {% if entry.entryLink.one()|length %}
+            {% set navlink = entry.entryLink.one().url %}
+          {% else %}
       
-          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
-          </ul>
-        </footer>
-      </div>
-</footer>
-
-
+            {% set navlink = alias('@web') ~ '/' ~ entry.customLink %}
+        {% endif %}
+        {% set btnnav = "" %}
+        {% set mnuClass = "" %}
+       
+        <li class="nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower }}">
+          <a id="{{ entry.title }}" href="{{ navlink }}" class="nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }} {{ mnuClass }}">{{entry.title }}</a>
+        </li>
+       
+        {% endfor %} </ul>
+    </footer>
+  </div>
+</div>
+ 
+ 
+  
 <!-- Scripts -->
 
 

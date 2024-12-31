@@ -1,0 +1,22 @@
+<section class="bg-light d-flex">
+    <div class="container col px-4 py-0 g-0">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-0">
+            <div class="col-12 col-sm-8 col-lg-6">
+                {% set asset = pageSettings.pageheaderImageSmall.one() %}
+                {% set thumb = {
+                    mode: 'crop',
+                    width: 250,
+                    height: 250,
+                    quality: 85
+                  } %}
+                  <img   class="d-block mx-lg-auto img-fluid" alt="Page header image of Rebecca Luff" loading="lazy"
+  src="{{ asset.getUrl(thumb) }}"
+  width="{{ asset.getWidth(thumb) }}"
+  height="{{ asset.getHeight(thumb) }}">
+                </div>
+            <div class="col-lg-6">
+                <h1 class="fw-bold text-body-emphasis lh-1 mb-3 text-tertiary">My work</h1>
+            </div>
+        </div>
+    </div>
+</section>

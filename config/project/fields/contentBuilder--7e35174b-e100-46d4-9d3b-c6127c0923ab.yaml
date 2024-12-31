@@ -12,6 +12,7 @@ settings:
     - dfbecf23-f0aa-4d69-9909-4d13e6bcae60 # _Blockquote
     - 04cc8b70-77b8-4d48-b526-04af3b4b0e44 # _Cards with icon
     - 5e068733-e545-4667-8b60-515d9248b995 # _Contact form
+    - 8b8221e5-58d7-43f3-8e13-ff3559e61733 # Slide
   includeTableView: false
   maxEntries: null
   minEntries: null

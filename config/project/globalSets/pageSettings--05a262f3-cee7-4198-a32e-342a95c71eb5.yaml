@@ -1,0 +1,44 @@
+fieldLayouts:
+  d3c9dcf4-8371-4c8b-82be-f45d9b0bdd4f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-12-31T16:33:56+00:00'
+            elementCondition: null
+            fieldUid: 381ca719-b0cc-4bba-9b7d-4f65f18f781f # Image
+            handle: null
+            includeInCards: false
+            instructions: 'Set this to use this image on page headings'
+            label: 'Page header'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2c233bed-6a4b-4f09-a493-b016dd04fc41
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-31T16:33:56+00:00'
+            elementCondition: null
+            fieldUid: 381ca719-b0cc-4bba-9b7d-4f65f18f781f # Image
+            handle: pageheaderImageSmall
+            includeInCards: false
+            instructions: null
+            label: 'Page header small'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bd7ca1fa-3963-49f3-9b06-9447cb5fedcd
+            userCondition: null
+            warning: null
+            width: 100
+        name: 'Page settings'
+        uid: 81113527-ec65-4938-bcbc-acde7a85805d
+        userCondition: null
+handle: pageSettings
+name: 'Page settings'
+sortOrder: 3

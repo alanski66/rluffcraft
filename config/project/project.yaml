@@ -1,4 +1,4 @@
-dateModified: 1735652247
+dateModified: 1735667770
 email:
   fromEmail: alan@craftcode.co.uk
   fromName: 'Rebecca Luff'
@@ -7,6 +7,13 @@ fs:
   images:
     hasUrls: true
     name: Images
+    settings:
+      path: $ASSET_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSET_BASE_URL
+  organisationLogos:
+    hasUrls: true
+    name: 'Organisation logos'
     settings:
       path: $ASSET_BASE_PATH
     type: craft\fs\Local
@@ -22,9 +29,12 @@ meta:
     3b9ecd0a-e61a-481d-8254-4787941102e7: Simple # Simple
     3f249f62-1204-49f8-88a1-0111b89dc2fb: Contact # Contact
     04cc8b70-77b8-4d48-b526-04af3b4b0e44: '_Cards with icon' # _Cards with icon
+    4d310818-64c7-4baa-94b0-1559fef4f777: 'Organisation slider' # Organisation slider
+    05a262f3-cee7-4198-a32e-342a95c71eb5: 'Page settings' # Page settings
     5e068733-e545-4667-8b60-515d9248b995: '_Contact form' # _Contact form
     7e35174b-e100-46d4-9d3b-c6127c0923ab: 'Content builder' # Content builder
     7ec31d37-214a-451f-af7c-9c9bef77ab66: Telephone # Telephone
+    8b8221e5-58d7-43f3-8e13-ff3559e61733: Slide # Slide
     11e0fc69-749a-4920-a715-392b8d9f5d2b: 'Category image' # Category image
     19da515d-1f1d-4979-bad0-42556b9f0b78: Align # Align
     27fa1076-49b0-4d82-97c2-9b92351cce5a: page # page
@@ -37,6 +47,7 @@ meta:
     97e342cd-a55e-42c9-99d5-de73541a4860: Images # Images
     235b3d71-67ac-4db5-b0cf-c6324bccb41f: Email # Email
     381ca719-b0cc-4bba-9b7d-4f65f18f781f: Image # Image
+    704e537a-84b7-43df-a20f-bfb7cf1580b4: _Slide # _Slide
     797d4119-d4dd-4bcb-ab8b-cb5aa427bb44: 'Site settings' # Site settings
     833f8aa3-702e-4829-a2c5-272361210dbb: 'Content builder' # Content builder
     1336dd30-133c-404e-bd26-285c7b7a1c59: Icon # Icon
@@ -49,6 +60,7 @@ meta:
     b9c4f964-3733-467b-b83e-e3802aa7b65f: SEO # SEO
     b11d0d53-3b5b-434f-85be-8d7b05f27f2a: Homepage # Homepage
     b83563e4-d016-4de4-9291-d211ee33f97d: 'Rebecca Luff' # Rebecca Luff
+    c6d65337-e203-4774-8ae2-435e731da46e: Slides # Slides
     ca12435c-7971-4a6f-ab00-234f50a5b60c: logo # logo
     dfbecf23-f0aa-4d69-9909-4d13e6bcae60: _Blockquote # _Blockquote
     e38830f8-1fcf-495a-b446-d72cfabe43c3: Home # Home
@@ -57,6 +69,7 @@ meta:
     ece3f4c3-b556-4a0d-a0b4-9eed0b80a916: Menu # Menu
     edabf163-bcdc-46d6-8b79-16af15f8c9a7: 'entry link' # entry link
     f93a249c-cf72-4147-ac0d-64ed87954734: 'Quote author' # Quote author
+    f616d33b-e4fe-4da9-859d-11a862b0ca00: 'Organisation logos' # Organisation logos
     fd166723-04bc-4086-be93-9377832798d5: 'Custom link' # Custom link
     febc5ab2-f658-4720-a0e4-8497c27bebc2: 'Quote source' # Quote source
 plugins:

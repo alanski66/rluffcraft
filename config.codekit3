@@ -49,6 +49,12 @@
       "oAP" : "\/.gitignore",
       "oF" : 1
     },
+    "\/backups" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/backups",
+      "oF" : 0
+    },
     "\/bootstrap.php" : {
       "cB" : 0,
       "ft" : 8192,
@@ -56,6 +62,12 @@
       "oA" : 1,
       "oAP" : "\/bootstrap.php",
       "oF" : 1
+    },
+    "\/build" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/build",
+      "oF" : 0
     },
     "\/composer.json" : {
       "ft" : 524288,
@@ -117,172 +129,10 @@
       "oAP" : "\/rluffcraft.code-workspace",
       "oF" : 1
     },
-    "\/scripts\/.env.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/.env.sh",
-      "oF" : 0
-    },
-    "\/scripts\/.envprod.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/.envprod.sh",
-      "oF" : 0
-    },
-    "\/scripts\/backup_assets.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/backup_assets.sh",
-      "oF" : 0
-    },
-    "\/scripts\/backup_db.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/backup_db.sh",
-      "oF" : 0
-    },
-    "\/scripts\/backup_dirs.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/backup_dirs.sh",
-      "oF" : 0
-    },
-    "\/scripts\/clear_caches.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/clear_caches.sh",
-      "oF" : 0
-    },
-    "\/scripts\/common\/common_db.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/common\/common_db.sh",
-      "oF" : 0
-    },
-    "\/scripts\/common\/common_env.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/common\/common_env.sh",
-      "oF" : 0
-    },
-    "\/scripts\/common\/common_mysql.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/common\/common_mysql.sh",
-      "oF" : 0
-    },
-    "\/scripts\/common\/common_pgsql.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/common\/common_pgsql.sh",
-      "oF" : 0
-    },
-    "\/scripts\/common\/defaults.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/common\/defaults.sh",
-      "oF" : 0
-    },
-    "\/scripts\/craft2-example.env.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/craft2-example.env.sh",
-      "oF" : 0
-    },
-    "\/scripts\/craft3-example.env.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/craft3-example.env.sh",
-      "oF" : 0
-    },
-    "\/scripts\/pull_assets.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/pull_assets.sh",
-      "oF" : 0
-    },
-    "\/scripts\/pull_backups.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/pull_backups.sh",
-      "oF" : 0
-    },
-    "\/scripts\/pull_db.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/pull_db.sh",
-      "oF" : 0
-    },
-    "\/scripts\/restore_assets.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/restore_assets.sh",
-      "oF" : 0
-    },
-    "\/scripts\/restore_db.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/restore_db.sh",
-      "oF" : 0
-    },
-    "\/scripts\/restore_dirs.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/restore_dirs.sh",
-      "oF" : 0
-    },
-    "\/scripts\/set_perms.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/set_perms.sh",
-      "oF" : 0
-    },
-    "\/scripts\/sync_backups_to_s3.sh" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/scripts\/sync_backups_to_s3.sh",
+    "\/scripts" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/scripts",
       "oF" : 0
     },
     "\/src\/scss\/_custom_variables.scss" : {
@@ -1672,6 +1522,14 @@
       "oAP" : "\/templates\/_partials\/footer.twig",
       "oF" : 0
     },
+    "\/templates\/_partials\/header-shallow.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/_partials\/header-shallow.twig",
+      "oF" : 0
+    },
     "\/templates\/_partials\/header.twig" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1694,6 +1552,46 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/.gitkeep",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_blockquote.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_blockquote.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_cardsWithIcon.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_cardsWithIcon.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_contactForm.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_contactForm.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_text.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_text.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_textWithImage.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_textWithImage.twig",
       "oF" : 0
     },
     "\/templates\/content\/category-entry.twig" : {
@@ -1774,6 +1672,14 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/pages\/_partials\/block_textWithImage.twig",
+      "oF" : 0
+    },
+    "\/templates\/work\/_entry.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/work\/_entry.twig",
       "oF" : 0
     },
     "\/templates\/work\/index.twig" : {
@@ -3370,7 +3276,7 @@
     "rollupTreeshakingEnabled" : 0,
     "rollupTreeshakingModuleSideEffects" : 1,
     "sassWarningStyle" : 2,
-    "skippedFoldersString" : "\/vendor,\/storage\/framework\/sessions,\/storage,\/public_html,node_modules,_logs,logs,log,.idea,\/config,_cache,cache",
+    "skippedFoldersString" : "\/storage,\/build,\/public_html,cache,.idea,log,node_modules,logs,\/storage\/framework\/sessions,_logs,_cache,\/scripts,\/backups,\/vendor,\/config",
     "sourceFolderName" : "src",
     "susyVersion" : 3,
     "tsAllowArbitraryExtensions" : 0,

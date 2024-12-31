@@ -1,6 +1,8 @@
 color: null
 fieldLayouts:
-  6bd0d356-5dd3-4247-9cca-9bb4c4fc51a1:
+  b2f2acc4-5100-43a5-99a8-0072e90d665f:
+    cardView:
+      - 'layoutElement:e412c5ec-9bf9-411a-b126-35eeee591760'
     tabs:
       -
         elementCondition: null
@@ -10,7 +12,7 @@ fieldLayouts:
             autocomplete: false
             autocorrect: true
             class: null
-            dateAdded: '2024-12-30T19:09:12+00:00'
+            dateAdded: '2024-12-31T17:46:32+00:00'
             disabled: false
             elementCondition: null
             id: null
@@ -31,14 +33,14 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 6564f956-ac38-4d12-8510-daf8293bfdd6
+            uid: 7b2d8797-3411-451c-87f8-62b08c2cac23
             userCondition: null
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-30T19:10:35+00:00'
+            dateAdded: '2024-12-31T17:48:12+00:00'
             elementCondition: null
-            fieldUid: 7e35174b-e100-46d4-9d3b-c6127c0923ab # Content builder
+            fieldUid: fd166723-04bc-4086-be93-9377832798d5 # Custom link
             handle: null
             includeInCards: false
             instructions: null
@@ -47,17 +49,33 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 4cc95f77-a035-4078-ae9e-2a94c69f6206
+            uid: 40e51cc2-1144-440d-919a-9e8a2cbd18da
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-31T17:48:12+00:00'
+            elementCondition: null
+            fieldUid: ca12435c-7971-4a6f-ab00-234f50a5b60c # logo
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: true
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e412c5ec-9bf9-411a-b126-35eeee591760
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 14afd753-6499-40d1-8bcd-be1f51f9160b
+        uid: 931475d1-dfec-4abf-976a-4ee5eac6a896
         userCondition: null
-handle: contentBuilder
+handle: slide
 hasTitleField: true
 icon: null
-name: 'Content builder'
+name: _Slide
 showSlugField: true
 showStatusField: true
 slugTranslationKeyFormat: null

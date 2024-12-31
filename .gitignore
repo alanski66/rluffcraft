@@ -1,5 +1,7 @@
+
 .env
 /.env
+.tt
 /.idea
 /vendor
 /public_html/assets
