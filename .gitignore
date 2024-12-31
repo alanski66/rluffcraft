@@ -1,5 +1,9 @@
-.env*
+.env
+/.env
 /.idea
 /vendor
-
+/public_html/assets
+public_html/assets
+scripts/** */
+/scripts/** 
 .DS_Store

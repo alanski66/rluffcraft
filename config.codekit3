@@ -117,6 +117,174 @@
       "oAP" : "\/rluffcraft.code-workspace",
       "oF" : 1
     },
+    "\/scripts\/.env.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/.env.sh",
+      "oF" : 0
+    },
+    "\/scripts\/.envprod.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/.envprod.sh",
+      "oF" : 0
+    },
+    "\/scripts\/backup_assets.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/backup_assets.sh",
+      "oF" : 0
+    },
+    "\/scripts\/backup_db.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/backup_db.sh",
+      "oF" : 0
+    },
+    "\/scripts\/backup_dirs.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/backup_dirs.sh",
+      "oF" : 0
+    },
+    "\/scripts\/clear_caches.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/clear_caches.sh",
+      "oF" : 0
+    },
+    "\/scripts\/common\/common_db.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/common\/common_db.sh",
+      "oF" : 0
+    },
+    "\/scripts\/common\/common_env.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/common\/common_env.sh",
+      "oF" : 0
+    },
+    "\/scripts\/common\/common_mysql.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/common\/common_mysql.sh",
+      "oF" : 0
+    },
+    "\/scripts\/common\/common_pgsql.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/common\/common_pgsql.sh",
+      "oF" : 0
+    },
+    "\/scripts\/common\/defaults.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/common\/defaults.sh",
+      "oF" : 0
+    },
+    "\/scripts\/craft2-example.env.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/craft2-example.env.sh",
+      "oF" : 0
+    },
+    "\/scripts\/craft3-example.env.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/craft3-example.env.sh",
+      "oF" : 0
+    },
+    "\/scripts\/pull_assets.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/pull_assets.sh",
+      "oF" : 0
+    },
+    "\/scripts\/pull_backups.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/pull_backups.sh",
+      "oF" : 0
+    },
+    "\/scripts\/pull_db.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/pull_db.sh",
+      "oF" : 0
+    },
+    "\/scripts\/restore_assets.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/restore_assets.sh",
+      "oF" : 0
+    },
+    "\/scripts\/restore_db.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/restore_db.sh",
+      "oF" : 0
+    },
+    "\/scripts\/restore_dirs.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/restore_dirs.sh",
+      "oF" : 0
+    },
+    "\/scripts\/set_perms.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/set_perms.sh",
+      "oF" : 0
+    },
+    "\/scripts\/sync_backups_to_s3.sh" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/scripts\/sync_backups_to_s3.sh",
+      "oF" : 0
+    },
     "\/src\/scss\/_custom_variables.scss" : {
       "aP" : 1,
       "bl" : 0,
