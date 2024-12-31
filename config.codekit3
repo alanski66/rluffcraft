@@ -1424,6 +1424,19 @@
       "oS" : 3,
       "pg" : 0
     },
+    "\/src\/scss\/custom.scss" : {
+      "aP" : 1,
+      "bl" : 0,
+      "co" : 1,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 1,
+      "oA" : 1,
+      "oAP" : "\/public_html\/css\/style.min.css",
+      "oF" : 0,
+      "oS" : 3,
+      "pg" : 0
+    },
     "\/src\/scss\/main.scss" : {
       "aP" : 1,
       "bl" : 0,

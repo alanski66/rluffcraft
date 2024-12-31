@@ -6,36 +6,6 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
-            autocapitalize: true
-            autocomplete: false
-            autocorrect: true
-            class: null
-            dateAdded: '2024-12-30T19:52:16+00:00'
-            disabled: false
-            elementCondition: null
-            id: null
-            includeInCards: false
-            inputType: null
-            instructions: null
-            label: null
-            max: null
-            min: null
-            name: null
-            orientation: null
-            placeholder: null
-            providesThumbs: false
-            readonly: false
-            required: true
-            size: null
-            step: null
-            tip: null
-            title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 265d6e81-1582-4915-beb7-888998b6df69
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2024-12-30T19:55:48+00:00'
             elementCondition: null
             fieldUid: ae10a9d7-2e31-45bd-a334-d6fe39c19379 # Quote
@@ -87,7 +57,7 @@ fieldLayouts:
         uid: 1bea9714-583b-450b-9c0a-6a302eaea6d4
         userCondition: null
 handle: blockquote
-hasTitleField: true
+hasTitleField: false
 icon: null
 name: _Blockquote
 showSlugField: true
