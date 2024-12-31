@@ -2,32 +2,56 @@
 
 
 {% block content %}
-{% set myCategoryQuery = craft.categories()
-    .group('work') %}
-    {# Fetch the categories #}
-    {% set categories = myCategoryQuery.all() %}
 
+<section class="bg-light d-flex">
+    <div class="container col-xxl-8 px-4 py-0 g-0">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-0">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="{{alias('@assetBaseUrl')}}/images/rebeccaI-greenscreen-removebg.webp"
+                    class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="500" height="200" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">My work</h1>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+{% set myCategoryQuery = craft.categories()
+.group('work') %}
+{# Fetch the categories #}
+{% set categories = myCategoryQuery.all() %}
+<section class="py-5 d-flex">
     <div class="container">
-    {% for category in categories %}
-    {% set numofEntries = craft.entries.section('work').limit(null).relatedTo(category).count() %}
-    <div class="col-xl-3 col-lg-4 col-md-6 col-12  align-items-stretch">
-        
-            
-        <a href="{{category.url}}">
-            <div class="card-hover-svg card h-100">
-                <div class="card-body d-flex flex-column gap-4 flex-grow-1">
-                <div class=" d-flex flex-column gap-4 flex-grow-1 flex-grow-1">
-                    <h3 class="mb-0 text-center">{{ category.title }}</h3>
-                    <span class="text-gray-500 d-none">
-                        <span class="fw-bold">{{numofEntries}}</span>
-                        Issues
-                    </span>
+        <div class="row">
+            {% for category in categories %}
+            {% set numofEntries = craft.entries.section('work').limit(null).relatedTo(category).count() %}
+            {% set catAsset = category.categoryImage.one() ?? null %}
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                        <h3 class="mb-0">{{ category.title }}</h3>
+
+                        <p class="mb-auto">{{ category.categoryDescription |raw }}</p>
+                        <a href="{{ category.url}}" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                        </a>
+                    </div>
+                    {% if catAsset | length %}
+                   
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="{{catAsset.getUrl('square')}}" class="img-fluid">
+                    </div>
+                    {% endif %}
                 </div>
             </div>
-            </div>
-        </a>
-    
+            {% endfor %}
+        </div>
     </div>
-    {% endfor %}
-</div>
+</section>
+
 {% endblock %}

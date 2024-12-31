@@ -1,0 +1,8 @@
+columnSuffix: null
+handle: contactForm
+instructions: null
+name: 'Contact form'
+searchable: false
+translationKeyFormat: null
+translationMethod: none
+type: wheelform\fields\FormField

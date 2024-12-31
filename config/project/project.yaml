@@ -1,4 +1,4 @@
-dateModified: 1735502015
+dateModified: 1735650564
 email:
   fromEmail: alan@craftcode.co.uk
   fromName: 'Rebecca Luff'
@@ -13,32 +13,57 @@ fs:
     url: $ASSET_BASE_URL
 meta:
   __names__:
-    0a0a61db-c42b-49a9-b6cd-9a96be13752e: intro # intro
+    0a0a61db-c42b-49a9-b6cd-9a96be13752e: Intro # Intro
     0aad6b5b-d3fa-4b2d-b5c5-0537467930b4: Category # Category
     0feb6d1d-66c8-449f-a182-59ce63dc231a: 'Unsplash color' # Unsplash color
     1a2a8073-e10c-432b-841d-63f885e96036: Menu # Menu
     02a30bda-d2b5-41f6-ba9b-8ce888e8e6ae: Body # Body
     2f1244a3-6894-4944-9f5a-f9810dc55296: LinkedIn # LinkedIn
     3b9ecd0a-e61a-481d-8254-4787941102e7: Simple # Simple
+    3f249f62-1204-49f8-88a1-0111b89dc2fb: Contact # Contact
+    04cc8b70-77b8-4d48-b526-04af3b4b0e44: '_Cards with icon' # _Cards with icon
+    5e068733-e545-4667-8b60-515d9248b995: '_Contact form' # _Contact form
+    7e35174b-e100-46d4-9d3b-c6127c0923ab: 'Content builder' # Content builder
     7ec31d37-214a-451f-af7c-9c9bef77ab66: Telephone # Telephone
+    11e0fc69-749a-4920-a715-392b8d9f5d2b: 'Category image' # Category image
+    19da515d-1f1d-4979-bad0-42556b9f0b78: Align # Align
     27fa1076-49b0-4d82-97c2-9b92351cce5a: page # page
     57a9f983-128e-4777-998d-57ad443ae51d: 'Unsplash url' # Unsplash url
+    63fba8da-d052-427a-92d9-4d960b3420e7: 'Contact form' # Contact form
+    64ad5ce8-c3a8-4bce-b98b-2677ebf3ac78: _Text # _Text
     74fc919e-4e7c-4b41-a8b7-4226de6ef603: Work # Work
     92bca146-99c6-485b-af9e-f66ce402a4bd: 'Work case studies' # Work case studies
     95d542d0-1ea8-41c8-9ae0-d83d5751f5c5: 'Contact links' # Contact links
     97e342cd-a55e-42c9-99d5-de73541a4860: Images # Images
     235b3d71-67ac-4db5-b0cf-c6324bccb41f: Email # Email
+    381ca719-b0cc-4bba-9b7d-4f65f18f781f: Image # Image
+    797d4119-d4dd-4bcb-ab8b-cb5aa427bb44: 'Site settings' # Site settings
+    833f8aa3-702e-4829-a2c5-272361210dbb: 'Content builder' # Content builder
+    1336dd30-133c-404e-bd26-285c7b7a1c59: Icon # Icon
     44796fd5-bb11-438e-893b-74cd6f43996f: 'Rebecca Luff' # Rebecca Luff
+    994884b7-02f8-4488-9302-b1688ae96e6a: '_Text with image' # _Text with image
+    04070434-f1fd-4db0-8ad0-51749d544db5: Square # Square
     a8461432-9f67-4ed1-ac53-5fb464f68ac8: Pages # Pages
+    ae10a9d7-2e31-45bd-a334-d6fe39c19379: Quote # Quote
     b2b15e5c-80c6-4bff-b6d1-e09b1bb48fac: 'Unsplash author' # Unsplash author
     b9c4f964-3733-467b-b83e-e3802aa7b65f: SEO # SEO
+    b11d0d53-3b5b-434f-85be-8d7b05f27f2a: Homepage # Homepage
     b83563e4-d016-4de4-9291-d211ee33f97d: 'Rebecca Luff' # Rebecca Luff
+    ca12435c-7971-4a6f-ab00-234f50a5b60c: logo # logo
+    dfbecf23-f0aa-4d69-9909-4d13e6bcae60: _Blockquote # _Blockquote
+    e38830f8-1fcf-495a-b446-d72cfabe43c3: Home # Home
     ea817c34-179d-4093-a610-ec2c1a4b1cac: 'Category description' # Category description
     ebbb5274-bb4d-4943-9eb1-32bd320b8ad3: 'Case study' # Case study
     ece3f4c3-b556-4a0d-a0b4-9eed0b80a916: Menu # Menu
     edabf163-bcdc-46d6-8b79-16af15f8c9a7: 'entry link' # entry link
+    f93a249c-cf72-4147-ac0d-64ed87954734: 'Quote author' # Quote author
     fd166723-04bc-4086-be93-9377832798d5: 'Custom link' # Custom link
+    febc5ab2-f658-4720-a0e4-8497c27bebc2: 'Quote source' # Quote source
 plugins:
+  buttonbox:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.0.0
   ckeditor:
     edition: standard
     enabled: true
@@ -47,6 +72,14 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.1
+  cp-field-inspect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+  device-detect:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
   minify:
     edition: standard
     enabled: false
@@ -56,7 +89,7 @@ plugins:
     enabled: true
     schemaVersion: 3.2.0
     settings:
-      description: ''
+      description: '{{object.intro}}'
       facebookAppId: ''
       metaTemplate: ''
       removeAlternateUrls: ''
@@ -109,6 +142,17 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.0.0
+    settings:
+      cp_label: Forms
+      disabled_fields: ''
+      from_email: info@rebeccaluff.com
+      from_name: 'Rebecca Luff'
+      recaptcha_min_score: '0.5'
+      recaptcha_public: ''
+      recaptcha_secret: ''
+      recaptcha_version: '2'
+      success_message: 'Thanks for reaching out. I will get notified of this and respond in the next working 24 hrs.'
+      volume_id: ''
 system:
   edition: solo
   live: true

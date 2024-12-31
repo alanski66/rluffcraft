@@ -1,0 +1,37 @@
+color: null
+fieldLayouts:
+  a73bfe37-e0a5-4d64-909d-359f83829524:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2024-12-31T12:11:47+00:00'
+            elementCondition: null
+            fieldUid: 63fba8da-d052-427a-92d9-4d960b3420e7 # Contact form
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0bcd50ce-bf1a-4014-bb51-e12eabdc9d4b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a6a2f6c9-5163-4558-b9d5-fa9a68e3b83e
+        userCondition: null
+handle: contactForm
+hasTitleField: false
+icon: null
+name: '_Contact form'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

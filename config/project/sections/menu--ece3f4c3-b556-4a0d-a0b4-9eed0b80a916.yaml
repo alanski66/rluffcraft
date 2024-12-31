@@ -21,9 +21,9 @@ propagationMethod: all
 siteSettings:
   44796fd5-bb11-438e-893b-74cd6f43996f: # Rebecca Luff
     enabledByDefault: true
-    hasUrls: true
-    template: menu/_entry.twig
-    uriFormat: '{slug}'
+    hasUrls: false
+    template: null
+    uriFormat: null
 structure:
   maxLevels: null
   uid: ab94c5e8-1bf2-4e86-86f2-fb5dba7599bb

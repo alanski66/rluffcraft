@@ -1,6 +1,6 @@
 columnSuffix: null
 handle: customLink
-instructions: null
+instructions: 'Leave blank not to use'
 name: 'Custom link'
 searchable: false
 settings:

@@ -38,7 +38,7 @@ fieldLayouts:
           -
             dateAdded: '2024-12-29T19:50:17+00:00'
             elementCondition: null
-            fieldUid: 0a0a61db-c42b-49a9-b6cd-9a96be13752e # intro
+            fieldUid: 0a0a61db-c42b-49a9-b6cd-9a96be13752e # Intro
             handle: null
             includeInCards: false
             instructions: null
@@ -64,6 +64,22 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 8021b457-a812-454c-a26a-b300c06e6414
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-30T12:38:09+00:00'
+            elementCondition: null
+            fieldUid: 7e35174b-e100-46d4-9d3b-c6127c0923ab # Content builder
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d5de44a7-5710-4aff-a991-e6c6dc5eef35
             userCondition: null
             warning: null
             width: 100
