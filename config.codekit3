@@ -13,41 +13,41 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.env",
-      "oF" : 1
+      "oF" : 0
     },
     "\/.env.example.dev" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.env.example.dev",
-      "oF" : 1
+      "oF" : 0
     },
     "\/.env.example.production" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.env.example.production",
-      "oF" : 1
+      "oF" : 0
     },
     "\/.env.example.staging" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.env.example.staging",
-      "oF" : 1
+      "oF" : 0
     },
     "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.gitignore",
-      "oF" : 1
+      "oF" : 0
     },
     "\/backups" : {
       "ft" : 65536,
@@ -59,9 +59,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/bootstrap.php",
-      "oF" : 1
+      "oF" : 0
     },
     "\/build" : {
       "ft" : 65536,
@@ -81,9 +81,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/composer.lock",
-      "oF" : 1
+      "oF" : 0
     },
     "\/config" : {
       "ft" : 65536,
@@ -95,9 +95,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/craft",
-      "oF" : 1
+      "oF" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
@@ -125,9 +125,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/rluffcraft.code-workspace",
-      "oF" : 1
+      "oF" : 0
     },
     "\/scripts" : {
       "ft" : 65536,
@@ -1678,7 +1678,7 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
+      "oA" : 1,
       "oAP" : "\/templates\/work\/_entry.twig",
       "oF" : 0
     },
