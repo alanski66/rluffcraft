@@ -8,7 +8,9 @@
   "repository": {},
   "private": true,
   "dependencies": {
+    "@picocss/pico": "^2.0.6",
     "@popperjs/core": "^2.11.8",
+    "@yohns/picocss": "^2.2.2",
     "bootstrap": "^5.3.3"
   }
 }
