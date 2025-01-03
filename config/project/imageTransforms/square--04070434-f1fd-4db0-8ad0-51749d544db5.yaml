@@ -1,11 +1,11 @@
 fill: null
 format: avif
 handle: square
-height: 250
+height: 275
 interlace: none
 mode: crop
 name: Square
 position: center-center
 quality: null
 upscale: true
-width: 250
+width: 275

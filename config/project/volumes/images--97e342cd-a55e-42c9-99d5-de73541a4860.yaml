@@ -117,8 +117,8 @@ fs: images
 handle: images
 name: Images
 sortOrder: 1
-subpath: ''
+subpath: images
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: ''
-transformSubpath: ''
+transformSubpath: images

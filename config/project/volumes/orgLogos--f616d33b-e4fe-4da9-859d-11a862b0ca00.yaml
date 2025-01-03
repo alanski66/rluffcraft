@@ -59,8 +59,8 @@ fs: organisationLogos
 handle: orgLogos
 name: 'Organisation logos'
 sortOrder: 2
-subpath: ''
+subpath: logos
 titleTranslationKeyFormat: null
 titleTranslationMethod: site
 transformFs: ''
-transformSubpath: ''
+transformSubpath: logos

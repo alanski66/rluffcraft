@@ -1,4 +1,34 @@
-dateModified: 1735667770
+dateModified: 1735917841
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Structures
+      type: heading
+    -
+      key: 'section:ece3f4c3-b556-4a0d-a0b4-9eed0b80a916' # Menu
+      type: native
+    -
+      key: 'section:a8461432-9f67-4ed1-ac53-5fb464f68ac8' # Pages
+      type: native
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:92bca146-99c6-485b-af9e-f66ce402a4bd' # Work case studies
+      tableAttributes:
+        - status
+        - postDate
+        - link
+        - 'field:381ca719-b0cc-4bba-9b7d-4f65f18f781f' # Image
+      type: native
 email:
   fromEmail: alan@craftcode.co.uk
   fromName: 'Rebecca Luff'
@@ -35,6 +65,7 @@ meta:
     7e35174b-e100-46d4-9d3b-c6127c0923ab: 'Content builder' # Content builder
     7ec31d37-214a-451f-af7c-9c9bef77ab66: Telephone # Telephone
     8b8221e5-58d7-43f3-8e13-ff3559e61733: Slide # Slide
+    9a873930-78fb-428c-af5e-51a59e874862: Embed # Embed
     11e0fc69-749a-4920-a715-392b8d9f5d2b: 'Category image' # Category image
     19da515d-1f1d-4979-bad0-42556b9f0b78: Align # Align
     27fa1076-49b0-4d82-97c2-9b92351cce5a: page # page
@@ -46,24 +77,29 @@ meta:
     95d542d0-1ea8-41c8-9ae0-d83d5751f5c5: 'Contact links' # Contact links
     97e342cd-a55e-42c9-99d5-de73541a4860: Images # Images
     235b3d71-67ac-4db5-b0cf-c6324bccb41f: Email # Email
+    274bbbf8-3795-475d-b50b-e2d36fc6cc20: 'Url link' # Url link
     381ca719-b0cc-4bba-9b7d-4f65f18f781f: Image # Image
     704e537a-84b7-43df-a20f-bfb7cf1580b4: _Slide # _Slide
+    778b63af-ba35-4c6e-bc4e-4fa8764d54e3: 'Url link' # Url link
     797d4119-d4dd-4bcb-ab8b-cb5aa427bb44: 'Site settings' # Site settings
     833f8aa3-702e-4829-a2c5-272361210dbb: 'Content builder' # Content builder
     1336dd30-133c-404e-bd26-285c7b7a1c59: Icon # Icon
     44796fd5-bb11-438e-893b-74cd6f43996f: 'Rebecca Luff' # Rebecca Luff
     994884b7-02f8-4488-9302-b1688ae96e6a: '_Text with image' # _Text with image
     04070434-f1fd-4db0-8ad0-51749d544db5: Square # Square
+    99639335-7fe8-46fe-bbde-b2f117aad2f6: Image # Image
     a8461432-9f67-4ed1-ac53-5fb464f68ac8: Pages # Pages
     ae10a9d7-2e31-45bd-a334-d6fe39c19379: Quote # Quote
     b2b15e5c-80c6-4bff-b6d1-e09b1bb48fac: 'Unsplash author' # Unsplash author
     b9c4f964-3733-467b-b83e-e3802aa7b65f: SEO # SEO
     b11d0d53-3b5b-434f-85be-8d7b05f27f2a: Homepage # Homepage
     b83563e4-d016-4de4-9291-d211ee33f97d: 'Rebecca Luff' # Rebecca Luff
+    ba3ad3cc-5e02-4411-a9b7-0cde778a7517: Work # Work
     c6d65337-e203-4774-8ae2-435e731da46e: Slides # Slides
     ca12435c-7971-4a6f-ab00-234f50a5b60c: logo # logo
     dfbecf23-f0aa-4d69-9909-4d13e6bcae60: _Blockquote # _Blockquote
     e38830f8-1fcf-495a-b446-d72cfabe43c3: Home # Home
+    e7472983-abd7-4164-9ee1-4e9ad5694afb: _Video # _Video
     ea817c34-179d-4093-a610-ec2c1a4b1cac: 'Category description' # Category description
     ebbb5274-bb4d-4943-9eb1-32bd320b8ad3: 'Case study' # Case study
     ece3f4c3-b556-4a0d-a0b4-9eed0b80a916: Menu # Menu
@@ -97,6 +133,10 @@ plugins:
     edition: standard
     enabled: false
     schemaVersion: 1.0.0
+  oembed:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.1
   seo:
     edition: standard
     enabled: true

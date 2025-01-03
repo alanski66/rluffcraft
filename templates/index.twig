@@ -3,10 +3,10 @@
 {% block content %}
 
 <section class="bg-light d-flex">
-<div class="container col-xxl-8 px-4 py-0 g-0">
+<div class="container">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-0">
       <div class="col-10 col-sm-8 col-lg-6">
-        <img src="{{alias('@assetBaseUrl')}}/images/rebeccaI-greenscreen-removebg.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        <img src="{{alias('@assetBaseUrl')}}/rebeccaI-greenscreen.webp" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
       </div>
       <div class="col-lg-6">
         <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Gentle leadership & coaching to get stuff done</h1>
@@ -19,7 +19,36 @@
     </div>
   </div>
 </section>
-
+{% set myCategoryQuery = craft.categories()
+  .group('work') %}
+  {# Fetch the categories #}
+  {% set categories = myCategoryQuery.all() %}
+  <!-- work with me -->
+  <section class="py-5 d-flex">
+      <div class="container">
+          <div class="row">
+            <div class="col-12 text-center pb-5">
+              <h3 class="border-bottom d-inline pb-3">You can work with me on </h3>
+              
+          </div>
+              {% for category in categories %}
+              
+              {% set catAsset = category.categoryImage.one() ?? null %}
+              <div class="col-auto col-lg-6 g-4" >
+              <div class="card text-bg-ight mb-3 shadow border-0">
+               
+                <div class="card-body">
+                  <h5 class="card-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightbulb" viewBox="0 0 16 16">
+                    <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a2 2 0 0 0-.453-.618A5.98 5.98 0 0 1 2 6m6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1"/>
+                  </svg> {{ category.title }}</h5>
+                  <p class="card-text">{{ category.categoryDescription |raw }}</p>
+                </div>
+              </div>
+            </div>
+              {% endfor %}
+          </div>
+      </div>
+  </section>
 
 
 {% endblock %}

@@ -5,8 +5,8 @@
 {% include('_partials/header-shallow')%}
 
 
-<section class="py-5 d-flex bg-community">
-    <div class="container">
+<section class="py-5 d-flex bg-community position-relative z-n1">
+    <div class="container position-relative z-n1">
 
         {% set entries = craft.entries.section('work').limit(null).all() %}
         {# {% for entry in entries %}
@@ -39,8 +39,8 @@
 
         
     
-        <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-            <div class="col-12 p-5 ps-0 col-md-12 col-lg-7 d-flex flex-column position-static">
+        <div class="row g-0 flex-md-row mb-4 h-md-250 position-relative">
+            <div class="col-12 p-5 ps-0 col-md-12 col-lg-7 d-flex flex-column position-relative">
                 <h3 class="">{{entry.title}}</h3>
                {% if asset | length %}
                 <img class="d-lg-none img-fluid" src="{{asset.url}}" >
@@ -50,7 +50,8 @@
                     project manage, facilitate meetings, manage interactions between stakeholders and and coach the
                     chief exec.</p>
 
-                <figure>
+                <div class="quote d-flex flex-column position-relative">
+                    {# <img src="{{ baseUrl}}/css/quote.png" class="position-relative mb-3"/> #}
                     <blockquote class="blockquote fs-6">
                         <p>Rebecca is very much an encourager and empathetic and that made us feel very at ease in the
                             programme and enabled an honesty and vulnerability that meant all conversations where real
@@ -61,14 +62,21 @@
                             not be afraid to take time away and this I believe is as moved me on to the next phase in
                             both professional and personal development.
                         </p>
+                        
                     </blockquote>
-                    <figcaption class="blockquote-footer">
-                        Becci <cite title="Source Title">SMF</cite>
-                    </figcaption>
-                </figure>
-                <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
-                    Continue reading
+                   <figcaption class="blockquote-footer">
+                            Becci <cite title="Source Title">SMF</cite>
+                        </figcaption>
+                </div>
+                
+                {% if entry.urlLink %}
+                <a href="{{entry.urlLink}}" class="icon-link gap-1 icon-link-hover stretched-link">
+                    Continue reading <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                        <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                      </svg>
                 </a>
+                {% endif %}
             </div>
             
             <div class="col-12 col-md-12 col-lg-5 d-flex justify-content-center align-items-center">
@@ -80,7 +88,7 @@
                     {% else %}
                
                 {% if asset | length %}
-                <img class="d-lg-block img-fluid" src="{{asset.url}}" >
+                <img class="d-none d-lg-block img-fluid" src="{{asset.url}}" >
                 {% endif %}
                 {% endif %}
             </div>
