@@ -1656,6 +1656,14 @@
       "oAP" : "\/templates\/index.twig",
       "oF" : 0
     },
+    "\/templates\/my-work\/_entry.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/templates\/my-work\/_entry.twig",
+      "oF" : 0
+    },
     "\/templates\/my-work\/index copy.twig" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1670,6 +1678,38 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/my-work\/index.twig",
+      "oF" : 0
+    },
+    "\/templates\/pages\/__old_partials\/block_cardsWithIcon.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/__old_partials\/block_cardsWithIcon.twig",
+      "oF" : 0
+    },
+    "\/templates\/pages\/__old_partials\/block_contactForm.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/__old_partials\/block_contactForm.twig",
+      "oF" : 0
+    },
+    "\/templates\/pages\/__old_partials\/block_text.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/__old_partials\/block_text.twig",
+      "oF" : 0
+    },
+    "\/templates\/pages\/__old_partials\/block_textWithImage.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/__old_partials\/block_textWithImage.twig",
       "oF" : 0
     },
     "\/templates\/pages\/_default.twig" : {
@@ -1694,38 +1734,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/pages\/_entrytypes\/page.twig",
-      "oF" : 0
-    },
-    "\/templates\/pages\/_partials\/block_cardsWithIcon.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/pages\/_partials\/block_cardsWithIcon.twig",
-      "oF" : 0
-    },
-    "\/templates\/pages\/_partials\/block_contactForm.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/pages\/_partials\/block_contactForm.twig",
-      "oF" : 0
-    },
-    "\/templates\/pages\/_partials\/block_text.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/pages\/_partials\/block_text.twig",
-      "oF" : 0
-    },
-    "\/templates\/pages\/_partials\/block_textWithImage.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/pages\/_partials\/block_textWithImage.twig",
       "oF" : 0
     },
     "\/templates\/work\/_entry.twig" : {
@@ -1761,7 +1769,7 @@
     "creationDate" : 757284990.41065097,
     "displayValue" : "rluffcraft",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "\/public_html\/cpresources\/877fcdfa\/images\/icons\/apple-touch-icon.png",
+    "iconImageName" : "meme-daenerys",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {

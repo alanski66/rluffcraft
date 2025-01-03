@@ -7,54 +7,23 @@
             <h4 class="fw-lighter">Organisations I've worked with</h4>
 			<div class="lc-block">
 				<div id="carouselLogos" class="carousel slide pt-5 pb-4" data-bs-ride="carousel">
+					{% set slides = orgSlider.slides %}
 
 					<div class="carousel-inner px-5">
+						
 						<div class="carousel-item active">
 							<div class="row">
-								<div class="col-6 col-lg-2 align-self-center">
-									<img class="d-block w-100 px-3 mb-3" src="https://cdn.livecanvas.com/media/logos/11.png" alt="">
+								{% for block in slides %}
+								<div class="col-6 col-sm-3 col-lg-2 align-self-center">
+									<a href="{{block.customLink}}" target="_blank"><img class="d-block w-100 px-3 mb-3" src="{{block.logo.one().url }}	" alt="{{block.title}}"></a>
 								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/2.png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/3.png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/12.png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/5.png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/6.png" alt="">
-								</div>
+								{% endfor %}
 							</div>
 
 						</div>
-						<div class="carousel-item">
-							<div class="row">
-								<div class="col-6 col-lg-2 align-self-center">
-									<img class="d-block w-100 px-3 mb-3" src="https://cdn.livecanvas.com/media/logos/11.png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/2.png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/3.png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/12.png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/5.png" alt="">
-								</div>
-								<div class="col-6 col-lg-2  align-self-center">
-									<img class="d-block w-100 px-3  mb-3" src="https://cdn.livecanvas.com/media/logos/6.png" alt="">
-								</div>
-							</div>
-
-						</div>
+				
+				
+	
 
 					</div>
 

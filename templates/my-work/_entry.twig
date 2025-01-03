@@ -1,44 +1,20 @@
 {% extends "_layouts/generic-page-layout.twig" %}
-
+{% import '_macros' as macros %}
 
 {% block content %}
-{% include('_partials/header-shallow')%}
-
-
-<section class="py-5 d-flex position-relative">
-    <div class="container position-relative">
-
-        {% set entries = craft.entries.section('work').limit(null).all() %}
-        {# {% for entry in entries %}
-        {% if loop.index is even %}
-        {% set oddclass = "even flex-sm-row-reverse" %}
-        {% set quotealign = "text-start ps-5" %}
-        {% set border = "border-5 border-start" %}
-        {% set padding = "pe-lg-5" %}
-        {% else %}
-        {% set oddclass = "odd" %}
-        {% set border = "border-5 border-end" %}
-        {% set quotealign = "text-end pe-5" %}
-        {% set padding = "ps-lg-5" %} #}
-        {# {% endif %} #}
-
-
-
-        <h2>Some sub heading if needed</h2>
-        {% set entries = craft.entries.section('work').limit(null).all() %}
-     {% for entry in entries %}
-
-        {% set asset = entry.image.one() %}
-        {% set video = entry.embed %}
-        {% if entry.embed.valid %}
-        {% set asset = entry.embed.embed %}
-        {% else %} 
-        {% set asset = entry.image.one() %}
-        {% endif %}
-         
-
-        
-    
+    {%  set layout = null %}
+    <!--  Page Entry type default Content -->
+    {%  if entry is defined %}
+    {% set asset = entry.image.one() %}
+    {% set video = entry.embed %}
+    {% if entry.embed.valid %}
+    {% set asset = entry.embed.embed %}
+    {% else %} 
+    {% set asset = entry.image.one() %}
+    {% endif %}
+        {# {% include '/_partials/hero-featured.twig' %} #}
+        <section class="py-5 d-flex bg-community position-relative">
+            <div class="container position-relative">
         <div class="row g-0 flex-md-row mb-4 h-md-250 position-relative">
             <div class="col-12 p-5 ps-0 col-md-12 col-lg-7 d-flex flex-column position-relative">
                 <h3 class="">{{entry.title}}</h3>
@@ -84,20 +60,9 @@
                 {% endif %}
             </div>
         </div>
-        {% endfor %}
-
-
-
-
-
-
-
-
-
-
-        
 
     </div>
 </section>
+    {%  endif %}
 
 {% endblock %}

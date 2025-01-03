@@ -1,4 +1,4 @@
-dateModified: 1735917841
+dateModified: 1735939208
 elementSources:
   craft\elements\Entry:
     -
@@ -62,10 +62,12 @@ meta:
     4d310818-64c7-4baa-94b0-1559fef4f777: 'Organisation slider' # Organisation slider
     05a262f3-cee7-4198-a32e-342a95c71eb5: 'Page settings' # Page settings
     5e068733-e545-4667-8b60-515d9248b995: '_Contact form' # _Contact form
+    7cf846f7-68cf-4d25-8fee-b90dbbd98e2b: 'Organisation slider' # Organisation slider
     7e35174b-e100-46d4-9d3b-c6127c0923ab: 'Content builder' # Content builder
     7ec31d37-214a-451f-af7c-9c9bef77ab66: Telephone # Telephone
     8b8221e5-58d7-43f3-8e13-ff3559e61733: Slide # Slide
     9a873930-78fb-428c-af5e-51a59e874862: Embed # Embed
+    9ba69d50-bfc9-42a4-a532-0dd623c5d252: blog # blog
     11e0fc69-749a-4920-a715-392b8d9f5d2b: 'Category image' # Category image
     19da515d-1f1d-4979-bad0-42556b9f0b78: Align # Align
     27fa1076-49b0-4d82-97c2-9b92351cce5a: page # page
