@@ -33,12 +33,52 @@
 
 .curved-bottom {
     /* Curved corners */
-    border-bottom-left-radius: 50% 40%;
-    border-bottom-right-radius: 50% 40%;
+    border-bottom-left-radius: 99% 60%;
+    border-bottom-right-radius: 99% 40%;
 }
 
 .curved-top {
     /* Curved corners */
     border-top-left-radius: 50% 40%;
     border-top-right-radius: 50% 40%;
+}
+
+.custom-shape-divider-bottom-1735908194 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1735908194 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 56px;
+}
+
+.custom-shape-divider-bottom-1735908194 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.bg-community{
+    // background-image: url('https://rluff.test/assets/community.svg');
+    // background-repeat: no-repeat;
+    // opacity:0.6;
+}
+
+.blockquote-footer{
+    // font-size:70%;
+}
+
+// header
+a.navbar-brand{
+    // font-family: "Sarala", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.8rem;
 }

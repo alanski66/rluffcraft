@@ -1584,6 +1584,22 @@
       "oAP" : "\/templates\/blocks\/block_contactForm.twig",
       "oF" : 0
     },
+    "\/templates\/blocks\/block_image.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_image.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_slider.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_slider.twig",
+      "oF" : 0
+    },
     "\/templates\/blocks\/block_text.twig" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1598,6 +1614,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/blocks\/block_textWithImage.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_urlLink.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_urlLink.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_video.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_video.twig",
       "oF" : 0
     },
     "\/templates\/content\/category-entry.twig" : {
@@ -1622,6 +1654,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/index.twig",
+      "oF" : 0
+    },
+    "\/templates\/my-work\/index copy.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/my-work\/index copy.twig",
+      "oF" : 0
+    },
+    "\/templates\/my-work\/index.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/my-work\/index.twig",
       "oF" : 0
     },
     "\/templates\/pages\/_default.twig" : {

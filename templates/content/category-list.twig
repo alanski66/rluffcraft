@@ -2,7 +2,7 @@
 
 
 {% block content %}
-    {% include('_partials/header-shallow')%}
+{% include('_partials/header-shallow')%}
 
 
 <section class="py-8  category py-5">
@@ -15,25 +15,26 @@
                     {{category.categoryDescription}}
                     {% set catEntries = craft.entries.section('work').limit(null).relatedTo(category).all() %}
                     {% for entry in catEntries %}
-                    <div class="col-12 mb-4"></div>
                     
-                        <div class="card border">
-                            <div class="card-body d-flex flex-column gap-5 p-5">
-                                <article>
-                                    <a href="{{entry.url}}" class="text-body d-flex flex-row gap-2 link-underline link-underline-opacity-0 ">
+
+                    <div class="card border">
+                        <div class="card-body d-flex flex-column gap-5 p-5">
+                            <article>
+                                <a href="{{entry.url}}"
+                                    class="text-body d-flex flex-row gap-2 link-underline link-underline-opacity-0 ">
                                     <h2>{{entry.title}}</h2>
-                                    </a>
-                                    <span>{{entry.intro}}</span>
-                                </article>
-                            </div>
+                                </a>
+                                <span>{{entry.intro}}</span>
+                            </article>
+                        </div>
+                    </div>
+
+
+                    {% endfor %}
                 </div>
-
-
-                {% endfor %}
             </div>
-        </div>
 
-    </div>
+        </div>
     </div>
 </section>
 

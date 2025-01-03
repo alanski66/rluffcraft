@@ -1,6 +1,6 @@
 <section class="bg-light d-flex">
-    <div class="container col px-4 py-0 g-0">
-        <div class="row flex-lg-row-reverse align-items-center g-5 py-0">
+    <div class="container">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-0 g-0">
             <div class="col-12 col-sm-8 col-lg-6">
                 {% set asset = pageSettings.pageheaderImageSmall.one() %}
                 {% set thumb = {
@@ -9,7 +9,7 @@
                     height: 250,
                     quality: 85
                   } %}
-                  <img   class="d-block mx-lg-auto img-fluid" alt="Page header image of Rebecca Luff" loading="lazy"
+                  <img   class="d-block mx-lg-auto img-fluid rounded-circle bg-.bg-light bg-gradient" alt="Page header image of Rebecca Luff" loading="lazy"
   src="{{ asset.getUrl(thumb) }}"
   width="{{ asset.getWidth(thumb) }}"
   height="{{ asset.getHeight(thumb) }}">
@@ -17,8 +17,14 @@
 
             <div class="col-lg-6">
 
-                <div class=" fw-bold text-body-emphasis mb-3 text-tertiary fs-2">My work</div>
+                <div class="text-body-emphasis mb-3 text-tertiary fs-2">My work</div>
             </div>
         </div>
     </div>
+    
 </section>
+<div class="custom-shape-divider-bottom-1735908194">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
