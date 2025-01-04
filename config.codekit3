@@ -1528,6 +1528,14 @@
       "oAP" : "\/templates\/_partials\/carousel.twig",
       "oF" : 0
     },
+    "\/templates\/_partials\/cat-cards.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/_partials\/cat-cards.twig",
+      "oF" : 0
+    },
     "\/templates\/_partials\/footer.twig" : {
       "cB" : 0,
       "ft" : 8192,

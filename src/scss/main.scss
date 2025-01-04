@@ -1,10 +1,23 @@
-
 @import "bootstrap/scss/functions";
-@import "bootstrap/scss/variables";
+
 @import "bootstrap/scss/mixins";
-// $primary: green;
-// $font-family-sans-serif:      "Parkinsans";
-$font-family-sans-serif: "Noto Sans", serif;
+
+// $info:orange !default;
+@import "custom_variables.scss";
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+// $font-family-sans-serif: "Noto Sans", serif;
+$font-family-sans-serif: "Open Sans";
 $display-font-sizes: (
   1: 5rem,
   2: 4.5rem,
@@ -13,7 +26,8 @@ $display-font-sizes: (
   5: 3rem,
   6: 1.8rem
 );
-@import "custom_variables.scss";
+
+
 @import "bootstrap/scss/bootstrap.scss";
 
 

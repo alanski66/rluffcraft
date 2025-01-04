@@ -35,6 +35,117 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            dateAdded: '2025-01-04T15:56:41+00:00'
+            elementCondition: null
+            fieldUid: 381ca719-b0cc-4bba-9b7d-4f65f18f781f # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 56e191a0-01b0-4561-8dc5-c6a7a5625a6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-04T15:27:50+00:00'
+            elementCondition: null
+            fieldUid: aed592ff-b867-4dab-a4d0-90b22f839a79 # Hero Headline
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7fde02be-60a5-465f-8192-9ef2edeb46fc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-04T15:27:50+00:00'
+            elementCondition: null
+            fieldUid: a1b32f40-889c-402e-ba5b-de1a3a479e73 # Hero button text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 15a8c8f2-4ad7-4696-8a3d-310444086535
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-04T15:27:50+00:00'
+            elementCondition: null
+            fieldUid: 9af5f9a1-0f69-4e01-8123-2d5c1543f5af # Hero button link
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a387a25a-6334-4a45-9d1f-74cbbf25276b
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-04T15:46:06+00:00'
+            elementCondition: null
+            fieldUid: c8b7c380-97a5-4713-877d-421be3db3fcb # Words
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: bb08eb76-8ee0-4b58-aec0-9423c39503f6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-04T15:27:50+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 4801106e-56bc-4060-83af-a2e72ad2397b
+            userCondition: null
+          -
+            dateAdded: '2025-01-04T15:27:50+00:00'
+            elementCondition: null
+            fieldUid: f872b337-7e6b-41fc-9347-2f722d19098a # Section heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 31b820d5-017d-45c4-a9ea-2909b7bd9306
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-04T15:27:50+00:00'
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Logo carousel is managed in global settings under organisational slider'
+            type: craft\fieldlayoutelements\Tip
+            uid: 807a6e24-f1f6-43a7-a390-cc35de41328f
+            userCondition: null
         name: Content
         uid: 8a10aa9b-9b80-4223-a700-cb1dede6122c
         userCondition: null
