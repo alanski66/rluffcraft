@@ -1,15 +1,26 @@
 // page header
-// .balloon-header{
-//     // display: inline-flex;
-//     position: absolute;
-//     background-image: url('../assets/balloon.png');
-//     background-repeat: no-repeat;
-// //     width: 293px !important;
-// //     height: 110px !important;
-// //   top:0;
-//     background-position:90% 40px;
+body.my-work section.balloon-header{
+    background-image: none!important;
+}
+body.my-work img.balloon-people{
+    // background-image: none!important;
+    display: block!important;
+}
+ img.balloon-people{
+    // background-image: none!important;
+    display: none!important;
+}
+.balloon-header{
+    // display: inline-flex;
+    position: absolute;
+    background-image: url('../assets/images/balloon.png');
+    background-repeat: no-repeat;
+//     width: 293px !important;
+//     height: 110px !important;
+//   top:0;
+    background-position:90% 52px;
   
-// }
+}
 // curve background
 .curve {
     position: absolute;
