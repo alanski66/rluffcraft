@@ -1,6 +1,6 @@
 {% extends "_layouts/generic-page-layout.twig" %}
 
-
+{% set bodyClass = entry.slug %}
 {% block content %}
 {% include('_partials/header-shallow')%}
 
@@ -11,19 +11,11 @@
 
         {% include('_partials/cat-cards') %}
 
-        {% if entry.sectionHeading | length %}
-        <h2>{{entry.sectionHeading}}</h2>
-        {% endif %}
-        {% if entry.body | length %}
-        <div class="col-12 col-lg-8">{{entry.body}}
-            <hr>
-        </div>
-
-        {% endif %}
+     
         {% set entries = craft.entries.section('work').limit(null).all() %}
         {% for entry in entries %}
 
-        {% set asset = entry.image.one() %}
+        {% set asset = entry.image.eagerly().one() %}
         {% set video = entry.embed %}
         {% if entry.embed.valid %}
         {% set asset = entry.embed.embed %}
@@ -35,16 +27,17 @@
 
 
         <div class="row g-0 flex-md-row mb-4 h-md-250 position-relative">
-            <div class="col-12 p-5 ps-0 col-md-12 col-lg-7 d-flex flex-column position-relative">
+            <div class="col-12 p-5 ps-0 col-md-12 col-lg-7 d-flex flex-column ">
                 <h3 class="">{{entry.title}}</h3>
                 {% if asset | length %}
                 <img class="d-lg-none img-fluid" src="{{asset.url}}">
                 {% endif %}
-                {% if entry.body | length %}{{entry.body}}{% endif %}
+                <div class="body">
+                    {% if entry.body | length %}{{entry.body}}{% endif %}
+                </div>
 
-
-                <div class="quote d-flex flex-column position-relative">
-                    {# <img src="{{ baseUrl}}/css/quote.png" class="position-relative mb-3" /> #}
+                <div class="d-flex flex-column position-relative">
+                    <img src="{{ baseUrl}}/css/quote.png" class="quote-image mb-3" />
                     <blockquote class="blockquote fs-6">
                         <p>{{entry.quote|raw}}
                         </p>
@@ -56,8 +49,9 @@
                 </div>
 
                 {% if entry.urlLink %}
-                <a href="{{entry.urlLink}}" class="icon-link gap-1 icon-link-hover stretched-link">
-                    Continue reading <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                <a href="{{entry.urlLink}}" class=" icon-link d-flex d-inline-flex">
+                    {{entry.urlLinkText | default ('Find out more') }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                         class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
                             d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />

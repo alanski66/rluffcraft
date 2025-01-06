@@ -3,28 +3,40 @@
 {% block content %}
 
 <section class="bg-light d-flex">
-<div class="container">
-    <div class="row flex-sm-row-reverse align-items-center g-5 py-0">
-      <div class="col-auto  col-md-6 col-lg-6">
-        {% set asset = entry.image.one() %}
-        
-        <img src="{{asset.url}}" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" 
-        width=" {{asset.width}}" height=" {{asset.height}}" loading="lazy">
-      </div>
-      <div class="col-auto  col-md-6 col-lg-6 justify-content-md-start">
-        <div class="d-flex py-5 fs-5">
-          {{ entry.words |replace({',': "<span class='d-flex-inline text-primary'>&nbsp;//&nbsp; </span>" })|raw }}
+  <div class="container">
+    <div class="col-12 d-none d-md-block d-lg-none d-flex mx-auto fs-6">
+      {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp; </span>" })|raw }}
+    </div>
+    <div class="row flex-sm-row-reverse align-items-center align-items-md-end align-items-lg-center">
+     
 
-          
-        </div>
-        <h1 class="display-5 fw-semibold text-body-emphasis lh-2 mb-5">
-        {{entry.heroheadline}}
-        </h1>
+      <div class="col  col-md-6 col-lg-6">
+        {% set asset = entry.image.eagerly().one() %}
+        <!-- mobile only -->
+        {% set words =  entry.words |split(',') %}
         
+        <div class="col d-block d-md-none text-center pt-4 pb-4">{{ words[0]}} <span class='d-inline text-primary'>&nbsp;//&nbsp;</span> {{words[1]}}</div>
+
+        <img src="{{baseUrl}}/assets/images/rebecca-trans-250x250.png" class="d-block d-md-none mx-auto img-fluid rounded-circle bg-primary" alt="Picture of Rebecca Luff" 
+        width="200" height="200" />
+
+        <div class="col d-block d-md-none text-center pt-4">{{ words[2]}} <span class='d-inline text-primary'>&nbsp;//&nbsp;</span> {{words[3]}}</div>
+
+        <img src="{{asset.url}}" class="d-none d-md-block mx-lg-auto img-fluid" alt="Picture of Rebecca Luff" width=" {{asset.width}}"
+          height=" {{asset.height}}" loading="lazy">
+      </div>
+      <div class="2nd col-12  col-md-6 col-lg-6 justify-content-md-start pb-5">
+        <div class="col-12 d-none d-lg-block d-flex mx-auto fs-6">
+          {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp; </span>" })|raw }}
+        </div>
+        <h1 class="d-flex justify-content-center text-center text-md-start fw-semibold text-body-emphasis lh-2 my-5">
+          {{entry.heroheadline}}
+        </h1>
+
         <div class="d-grid gap-2 d-md-flex justify-content-md-start">
           <a href="{{entry.heroButtonLink.one().url}}" class="btn btn-primary btn-lg px-4 me-md-2 mb-2">
             {{entry.heroButtonText}}</a>
-      
+
         </div>
 
       </div>

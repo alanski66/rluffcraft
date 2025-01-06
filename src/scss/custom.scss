@@ -1,3 +1,15 @@
+// page header
+// .balloon-header{
+//     // display: inline-flex;
+//     position: absolute;
+//     background-image: url('../assets/balloon.png');
+//     background-repeat: no-repeat;
+// //     width: 293px !important;
+// //     height: 110px !important;
+// //   top:0;
+//     background-position:90% 40px;
+  
+// }
 // curve background
 .curve {
     position: absolute;
@@ -90,11 +102,12 @@ a.nav-link{
     font-size:1.3rem;
     color:#333
 }
+a.icon-link{
+    width:fit-content;
+}
 
 //home
-.substrap span{
-    font-
-}
+
 
 //end home
 // .quote img{
@@ -119,18 +132,24 @@ footer a.nav-link{
     font-size:0.9rem;
     color:#333
 }
-.quote{
-    background-image: url('quote.png');
+.quote-image{
+    opacity: 0.2;
+    position: absolute;
+    // background-image: url('quote.png');
     background-repeat: no-repeat;
     // background-position: 5% 0 ;
-    // background-size:100px 60px;
-    background-position-x: -20px;
-    // text-indent: 75px;
-    z-index: 9999999999;
-    margin-left:-50px;
-    padding-left:50px;
-    position: relative;
+    width:100px;
+    height:60px;
+    background-size:100px 60px;
+    background-position-x: -0px;
+    
  
+}
+.body p{
+    font-weight: 500;
+}
+blockquote{
+    font-style: italic;
 }
 // blockquote {
 //     display: block;
@@ -167,3 +186,24 @@ figure{
     // margin-left:-60px;
     background-color: #eee;
 }
+@media only screen and (max-width: 600px) {
+
+}
+
+// @include media-breakpoint-up(sm) {
+    h1 {
+      font-size: 1.4rem;
+    }
+//   }
+  
+  @include media-breakpoint-up(md) {
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    h1 {
+      font-size: 2.3rem;
+    }
+  }
