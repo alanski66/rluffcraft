@@ -30,7 +30,8 @@
             <div class="col-12 p-5 col-md-12 col-lg-7 d-flex flex-column ">
                 <h3 class="">{{entry.title}}</h3>
                 {% if asset | length %}
-                <img class="d-lg-none img-fluid" src="{{asset.url}}">
+                <img class="d-lg-none img-fluid mb-3" loading="lazy" src="{{ asset.getUrl('article') }}" >
+                
                 {% endif %}
                 <div class="body">
                     {% if entry.body | length %}{{entry.body}}{% endif %}
@@ -71,7 +72,8 @@
                 {% else %}
 
                 {% if asset | length %}
-                <img class="d-none d-lg-block img-fluid" src="{{asset.url}}">
+                <img class="d-none d-lg-block img-fluid " sloading="lazy" rc="{{ asset.getUrl('article') }}"
+                >
                 {% endif %}
                 {% endif %}
             </div>
