@@ -1760,6 +1760,14 @@
       "oAP" : "\/templates\/pages\/_entrytypes\/page.twig",
       "oF" : 0
     },
+    "\/templates\/testimonials\/index.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/testimonials\/index.twig",
+      "oF" : 0
+    },
     "\/templates\/work\/_entry.twig" : {
       "cB" : 0,
       "ft" : 8192,

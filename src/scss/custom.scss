@@ -219,6 +219,20 @@ figure{
     }
   }
 
+.user-content h5 a{
+  color:#0277b7;
+}
+.user-image{
+  margin-bottom: -35px;
+}
+
+ .carousel span.carousel-control-prev-icon,
+.carousel span.carousel-control-next-icon,
+.carousel span.carousel-control-prev-icon,
+.carousel span.carousel-control-next-icon {
+  filter: invert(1)!important;
+}
+
   //video youtube lazy load
   .video-container {
     max-width: 760px;
