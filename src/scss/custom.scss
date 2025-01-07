@@ -221,9 +221,19 @@ figure{
 
 .user-content h5 a{
   color:#0277b7;
+  z-index: 99999;
+  position: relative;
 }
 .user-image{
-  margin-bottom: -35px;
+  margin-bottom: -15px;
+  z-index: 1;
+  position: relative;
+}
+.carousel-control-prev {
+  left: -20px;
+}
+.carousel-control-next {
+  right: -20px;
 }
 
  .carousel span.carousel-control-prev-icon,
