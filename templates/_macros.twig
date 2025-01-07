@@ -64,3 +64,19 @@
         {% endif %}
     {% endif %}
 {% endmacro %}
+
+{% macro extractYouTubeIdAndProvideiFrame(url) %}
+    {% set ytregex1 = '/^(?:https?:\\/\\/)?(?:www\.)?(?:youtu\.be\\/|youtube\.com)(?:\\/embed\\/|\\/v\\/|\\/watch\\?v=||\\/watch\\\?.+&v=)/' %}
+    {% set ytregexTrailingSlash = '/(\\/)$/' %}
+    {% set ytregexTrailingVariables = '/(&+.*)/' %}
+    {% set youtubeid = url | replace(ytregex1, '') | replace(ytregexTrailingSlash, '') | replace(ytregexTrailingVariables, '') %}
+    <iframe id="ytplayer" type="text/html" width="540" height="305" src="https://www.youtube.com/embed/{{ youtubeid }}?autoplay=0&origin={{ siteUrl }}&rel=0" frameborder="0"></iframe>
+{% endmacro %}
+
+{% macro extractYouTubeId(url) %}
+    {% set ytregex1 = '/^(?:https?:\\/\\/)?(?:www\.)?(?:youtu\.be\\/|youtube\.com)(?:\\/embed\\/|\\/v\\/|\\/watch\\?v=||\\/watch\\\?.+&v=)/' %}
+    {% set ytregexTrailingSlash = '/(\\/)$/' %}
+    {% set ytregexTrailingVariables = '/(&+.*)/' %}
+    {% set youtubeId = url | replace(ytregex1, '') | replace(ytregexTrailingSlash, '') | replace(ytregexTrailingVariables, '') %}    
+    {{youtubeId|spaceless}}
+{% endmacro %}

@@ -218,3 +218,81 @@ figure{
       font-size: 2.3rem;
     }
   }
+
+  //video youtube lazy load
+  .video-container {
+    max-width: 760px;
+    margin: 48px auto 0;
+    width: 100%;
+  }
+  
+  .youtube-embed,
+  .youtube embed,
+  .youtube iframe {
+    width: 100%;
+    max-height: 100%;
+  }
+  .youtube-embed {
+    position: relative;
+    padding-top: 56%;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .youtube-embed img {
+    width: 100%;
+    top: -16.84%;
+    left: 0;
+  }
+  .youtube-embed iframe {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .youtube-embed iframe,
+  .youtube-embed img {
+    position: absolute;
+  }
+  
+  .youtube-embed button.embed-video__play {
+    background: url("https://www.nextiva.com/assets/svg/play-button.svg")
+        no-repeat center center,
+      rgba(33, 33, 33, 0.8);
+    background-size: 40%;
+    background-position: 55%;
+    border: 0;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.2s ease;
+    -webkit-transition: background 0.2s;
+    width: 16%;
+    aspect-ratio: 1/1;
+    height: auto;
+    cursor: pointer;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  .youtube-embed:hover button.embed-video__play,
+  .youtube-embed button.embed-video__play:focus,
+  .youtube-embed button.embed-video__play:focus-visible {
+    background: url("https://www.nextiva.com/assets/svg/play-button.svg")
+        no-repeat center center,
+      #005fec;
+    background-size: 40%;
+    background-position: 55%;
+    box-shadow: 0 0 0 4px #fff !important;
+    outline: none;
+  }
+  @media (min-width: 768px) {
+    .youtube-embed:hover button.embed-video__play,
+    .youtube-embed button.embed-video__play:focus,
+    .youtube-embed button.embed-video__play:focus-visible {
+      box-shadow: 0 0 0 8px #fff !important;
+    }
+  }
+  

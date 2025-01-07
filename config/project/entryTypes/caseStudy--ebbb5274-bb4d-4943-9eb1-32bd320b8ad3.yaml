@@ -84,6 +84,22 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            dateAdded: '2025-01-05T11:53:00+00:00'
+            elementCondition: null
+            fieldUid: 11c02d72-eede-4b3c-916a-cb8b112a6324 # Url Link text
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f0b9b073-8a19-47f8-9e36-9b1dcd9b37cc
+            userCondition: null
+            warning: null
+            width: 50
+          -
             dateAdded: '2025-01-03T14:15:11+00:00'
             elementCondition: null
             fieldUid: 274bbbf8-3795-475d-b50b-e2d36fc6cc20 # Url link
@@ -98,7 +114,7 @@ fieldLayouts:
             uid: ac09d79b-de34-4178-940d-e43cb153271c
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             dateAdded: '2025-01-03T14:25:42+00:00'
             elementCondition: null
@@ -151,6 +167,22 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 9463b131-1ba2-4e29-94a2-3e2e71afe8c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-06T23:29:19+00:00'
+            elementCondition: null
+            fieldUid: 5ce4c45c-4533-4cba-8c45-36bfee218660 # Media embed
+            handle: null
+            includeInCards: false
+            instructions: 'Replace embed video by clikcing add button then find embed button next to upload. Add your url here and save'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 804b6500-e858-4c60-9f25-49c5d0db00b1
             userCondition: null
             warning: null
             width: 100

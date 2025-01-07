@@ -3,7 +3,7 @@
 {% set bodyClass = entry.slug %}
 {% block content %}
 {% include('_partials/header-shallow')%}
-
+    
 
 <section class=" d-flex position-relative">
     <div class="container position-relative">
@@ -12,31 +12,24 @@
         {% include('_partials/cat-cards') %}
 
      
-        {% set entries = craft.entries.section('work').limit(null).all() %}
+        {% set entries = craft.entries.section('work').limit(20).all() %}
         {% for entry in entries %}
 
-        {% set asset = entry.image.eagerly().one() %}
-        {% set video = entry.embed %}
-        {% if entry.embed.valid %}
-        {% set asset = entry.embed.embed %}
-        {% else %}
-        {% set asset = entry.image.one() %}
-        {% endif %}
+        {% set asset = entry.image.eagerly().one() ?? null %}
+        {% set video = entry.mediaEmbed.one() ?? null %}
 
 
-
-
-        <div class="row  flex-md-row mb-4 h-md-250 position-relative ">
-            <div class="col-12 p-5 col-md-12 col-lg-7 d-flex flex-column ">
+        <div class="row  flex-md-row mb-4 h-md-250 position-relative py-5 mb-5 shadow">
+            <div class="col-12 col-md-12 col-lg-7 d-flex flex-column px-5">
                 <h3 class="">{{entry.title}}</h3>
                 {% if asset | length %}
-                <img class="d-lg-none img-fluid mb-3" loading="lazy" src="{{ asset.getUrl('article') }}" >
+                <img class="d-lg-none img-fluid mb-3" loading="lazy" src="{{ asset.url}}" >
                 
                 {% endif %}
                 <div class="body">
                     {% if entry.body | length %}{{entry.body}}{% endif %}
                 </div>
-
+                {% if entry.quote | length %}
                 <div class="d-flex flex-column position-relative">
                     <img src="{{ baseUrl}}/css/quote.png" class="quote-image mb-3" />
                     <blockquote class="blockquote fs-6">
@@ -48,8 +41,9 @@
                         {{entry.quoteAuthor}} <cite title="Source Title">{{entry.quoteSource}}</cite>
                     </figcaption>
                 </div>
+                {% endif %}
 
-                {% if entry.urlLink %}
+                {% if entry.urlLink | length %}
                 <a href="{{entry.urlLink}}" class=" icon-link d-flex d-inline-flex">
                     {{entry.urlLinkText | default ('Find out more') }}
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
@@ -63,18 +57,16 @@
                 {% endif %}
             </div>
 
-            <div class="col-12 col-md-12 col-lg-5 d-flex justify-content-center align-items-center">
-
-                {% if entry.embed.valid %}
-                <div class="ratio ratio-16x9">
-                    {{entry.embed.embed | raw}}
+            <div class="col-12 col-md-12 col-lg-5 d-flex justify-content-end align-items-start mt-3 px-5">
+                {% if video |length %}
+                {% set embeddedAsset = craft.embeddedAssets.get(video) %}
+                {% if embeddedAsset | length and embeddedAsset.type == "video" %}
+                <div class="ratio ratio-4x3">
+                    {{ embeddedAsset.html }}
                 </div>
-                {% else %}
-
-                {% if asset | length %}
-                <img class="d-none d-lg-block img-fluid " sloading="lazy" rc="{{ asset.getUrl('article') }}"
-                >
                 {% endif %}
+                {% else %}
+                <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset.getUrl('article') }}">
                 {% endif %}
             </div>
         </div>

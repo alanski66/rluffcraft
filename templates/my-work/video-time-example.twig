@@ -1,34 +1,29 @@
 {% extends "_layouts/generic-page-layout.twig" %}
-{% import '_macros' as macro %}
 
+{% set bodyClass = entry.slug %}
 {% block content %}
-
-
-
-{% cache %}
-
-
+{% include('_partials/header-shallow')%}
+    
 
 <section class=" d-flex position-relative">
     <div class="container position-relative">
 
 
+        {# {% include('_partials/cat-cards') %} #}
 
-        {# {% set videoAsset = entry.embed.media.data.thumbnail_url ?? null %} #}
+     
+        {% set entries = craft.entries.section('work').limit(20).all() %}
+        {% for entry in entries %}
 
-        {# {% set imgAsset = entry.image.one() ?? null %} #}
-
-
-        {% set asset = entry.image.one() ?? null %}
-        {% set video = entry.mediaEmbed.one() ?? null %}
-
-        {# {% set asset = entry.embed.media.url ?? null %}
-        {% do asset.setTransform('article') %}
-        {% if asset |length %}
-        {% set asset = asset %}
-        {% else %}
-
-        {% endif %} #}
+        {% set asset = entry.image.eagerly().one() ?? null %}
+        {# {% set video = entry.embed %}
+        {# {% if entry.embed.valid %} #}
+        {# {% set asset = entry.embed.embed %} #}
+        {# {% else %}  #}
+        {% if asset %}        
+        {% set asset = asset.getUrl('article') %}
+        {% endif %}
+        {# {% endif %} #}
 
 
 
@@ -36,9 +31,9 @@
         <div class="row  flex-md-row mb-4 h-md-250 position-relative ">
             <div class="col-12 p-5 col-md-12 col-lg-7 d-flex flex-column ">
                 <h3 class="">{{entry.title}}</h3>
-
                 {% if asset | length %}
-                <img class="d-lg-none img-fluid mb-3" loading="lazy" src="">
+                <img class="d-lg-none img-fluid mb-3" loading="lazy" src="{{ asset}}" >
+                
                 {% endif %}
                 <div class="body">
                     {% if entry.body | length %}{{entry.body}}{% endif %}
@@ -71,30 +66,34 @@
                 {% endif %}
             </div>
 
-            <div class="col-12 py-5 col-md-12 col-lg-5  justify-content-center align-items-center">
-                {% if video |length %}
-                {% set embeddedAsset = craft.embeddedAssets.get(video) %}
-                {% if embeddedAsset | length and embeddedAsset.type == "video" %}
-                <div class="ratio ratio-4x3">
-                    {{ embeddedAsset.html }}
+            <div class="col-12 col-md-12 col-lg-5 d-flex justify-content-center align-items-center">
+
+                {% set youTubeUrl = entry.embed.media.url ?? null %}
+                {% if youTubeUrl | length %}
+                <div class="ratio ratio-16x9">
+                    {% set ytregex1 =
+                        '/^(?:https?:\\/\\/)?(?:www\.)?(?:youtu\.be\\/|youtube\.com)(?:\\/embed\\/|\\/v\\/|\\/watch\\?v=||\\/watch\\\?.+&v=)/'
+                        %}
+                        {% set ytregexTrailingSlash = '/(\\/)$/' %}
+                        {% set ytregexTrailingVariables = '/(&+.*)/' %}
+                        {% set youtubeid = youTubeUrl | replace(ytregex1, '') | replace(ytregexTrailingSlash, '') |
+                        replace(ytregexTrailingVariables, '') %}
+    
+                        <iframe id="ytplayer{{loop.index}}"  type="text/html" width="540" height="305"
+                            src="https://www.youtube.com/embed/{{ youtubeid }}?autoplay=0&origin={{ siteUrl }}&rel=0"
+                            frameborder="0"></iframe>
                 </div>
-                {% endif %}
                 {% else %}
-                <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset.url }}">
-                
+
+                {% if asset | length %}
+                    <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset }}">
+                {% endif %}
                 {% endif %}
             </div>
-
-            {# {% if asset | length %}
-            <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset }}">
-            {% endif %} #}
-
         </div>
-    </div>
-
+        {% endfor %}
 
     </div>
 </section>
-{# {% js baseUrl ~ "js/video-lazy-load.js" %} #}
-{% endcache %}
+
 {% endblock %}

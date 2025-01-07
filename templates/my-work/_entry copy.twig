@@ -3,32 +3,17 @@
 
 {% block content %}
 
-
-
-{% cache %}
-
+    
 
 
 <section class=" d-flex position-relative">
     <div class="container position-relative">
 
 
-
-        {# {% set videoAsset = entry.embed.media.data.thumbnail_url ?? null %} #}
-
-        {# {% set imgAsset = entry.image.one() ?? null %} #}
-
-
-        {% set asset = entry.image.one() ?? null %}
-        {% set video = entry.mediaEmbed.one() ?? null %}
-
-        {# {% set asset = entry.embed.media.url ?? null %}
-        {% do asset.setTransform('article') %}
+        {% set asset = entry.image.one() %}
         {% if asset |length %}
-        {% set asset = asset %}
-        {% else %}
-
-        {% endif %} #}
+        {% set asset = asset.getUrl('article') %}
+        {% endif %}
 
 
 
@@ -36,9 +21,9 @@
         <div class="row  flex-md-row mb-4 h-md-250 position-relative ">
             <div class="col-12 p-5 col-md-12 col-lg-7 d-flex flex-column ">
                 <h3 class="">{{entry.title}}</h3>
-
                 {% if asset | length %}
-                <img class="d-lg-none img-fluid mb-3" loading="lazy" src="">
+                <img class="d-lg-none img-fluid mb-3" loading="lazy" src="{{ asset}}">
+
                 {% endif %}
                 <div class="body">
                     {% if entry.body | length %}{{entry.body}}{% endif %}
@@ -72,22 +57,22 @@
             </div>
 
             <div class="col-12 py-5 col-md-12 col-lg-5  justify-content-center align-items-center">
-                {% if video |length %}
-                {% set embeddedAsset = craft.embeddedAssets.get(video) %}
-                {% if embeddedAsset | length and embeddedAsset.type == "video" %}
-                <div class="ratio ratio-4x3">
-                    {{ embeddedAsset.html }}
-                </div>
-                {% endif %}
-                {% else %}
-                <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset.url }}">
-                
-                {% endif %}
-            </div>
 
-            {# {% if asset | length %}
+                {# {{macro.extractYouTubeId(entry.embed.media.url)|spaceless}} #}
+<div class="video-container">url: 
+    <div class="youtube-embed" data-video-id="" data-video-thumb="{{entry.embed.media.image}}">
+      <button class="embed-video__play" aria-label="play Trace Advisors success story video"></button>
+    </div>  
+  </div>
+                {# {{ craft.oembed.render(entry.embed.media.url) }} 3.2sec #}
+                {# {% if entry.embed.valid %} #}
+                
+            </div>
+            {# {% endif %} #}
+
+            {% if asset | length %}
             <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset }}">
-            {% endif %} #}
+            {% endif %}
 
         </div>
     </div>
@@ -96,5 +81,5 @@
     </div>
 </section>
 {# {% js baseUrl ~ "js/video-lazy-load.js" %} #}
-{% endcache %}
+
 {% endblock %}
