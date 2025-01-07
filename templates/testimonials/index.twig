@@ -2,7 +2,7 @@
 {% import '_macros' as macros %}
 
 {% block content %}
-<section class="container-fluid bg-light p-5">
+<section class="container-fluid bg-ight p-5">
     <div class="container">
         <h3>Testimonials</h3>
         <div id="carouselExample" class="carousel slide">
@@ -22,11 +22,12 @@
                             </div>
                             <div class="user-content  mx-5 text-start">
                                 <div class="p-3 shadow ">
-                                    <h5 class="mb-3 text-center">
+                                    <h5 class="my-3 text-center">
                                         <a class="link-offset-2 link-underline link-underline-opacity-0"
                                             href="{{entry.linkedinProfileLink}}">{{entry.title}}</a>
                                     </h5>
-                                    <div class="px-5">{{entry.quote}}</div>
+                                    <div class="text-center fw-semibold mb-3">{{entry.organisation}}</div>
+                                    <div class="px-5 text-center">{{entry.quote}}</div>
                                     <div class="ratings text-center">
                                     <a class="link-offset-2 link-underline link-underline-opacity-0"
                                         href="{{entry.linkedinProfileLink}}">

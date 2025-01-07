@@ -221,7 +221,11 @@ figure{
 
 .user-content h5 a{
   color:#0277b7;
-  z-index: 99999;
+
+}
+.user-content{
+  background-color: white;
+  // z-index: 99999;
   position: relative;
 }
 .user-image{
