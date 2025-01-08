@@ -87,11 +87,7 @@ body.my-work img.balloon-people{
     fill: #FFFFFF;
 }
 
-.bg-community{
-    // background-image: url('https://rluff.test/assets/community.svg');
-    // background-repeat: no-repeat;
-    // opacity:0.6;
-}
+
 
 .blockquote-footer{
     font-size:100%;
@@ -129,10 +125,55 @@ a.icon-link{
 //     // z-index: 1000000;
 //     // // margin-left:-60px;
 // }
+//footer
+.testimonials .user-content{
+  // height:100%;
+}
+.testimonials .carousel-item.active {
+  display: flex;
+}
+.user-content h5 a{
+  color:#0277b7;
 
+}
+.testimonials .user-content{
+  background-color: white;
+  // z-index: 99999;
+  position: relative;
+//  height: 460px;
+}
+.user-image{
+  margin-bottom: -15px;
+  z-index: 1;
+  position: relative;
+}
+.carousel-control-prev {
+  left: -20px;
+}
+.carousel-control-next {
+  right: -20px;
+}
+
+ .carousel span.carousel-control-prev-icon,
+.carousel span.carousel-control-next-icon,
+.carousel span.carousel-control-prev-icon,
+.carousel span.carousel-control-next-icon {
+  filter: invert(1)!important;
+}
+
+@media only screen and (min-width: 768px) {
+ 
+}
+
+
+.orgs{
+  // bottom:80px;
+  position: relative;
+  // z-index:1;
+}
 .footer {
-    position: absolute;
-    bottom: 0;
+    
+    
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 60px;
@@ -143,6 +184,7 @@ footer a.nav-link{
     font-size:0.9rem;
     color:#333
 }
+//end footer
 .quote-image{
     opacity: 0.2;
     position: absolute;
@@ -190,6 +232,11 @@ blockquote{
 //     background-color: #f7d4de;
 //     box-shadow: 0 1px 5px #888888;
 //   }
+
+.bg-success {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
 figure{
     
     z-index: 9999;
@@ -217,35 +264,15 @@ figure{
     h1 {
       font-size: 2.3rem;
     }
+    //testy carousel
+    .testimonials .user-content{
+      height:350px;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      top:10%;
+    }
   }
-
-.user-content h5 a{
-  color:#0277b7;
-
-}
-.user-content{
-  background-color: white;
-  // z-index: 99999;
-  position: relative;
-}
-.user-image{
-  margin-bottom: -15px;
-  z-index: 1;
-  position: relative;
-}
-.carousel-control-prev {
-  left: -20px;
-}
-.carousel-control-next {
-  right: -20px;
-}
-
- .carousel span.carousel-control-prev-icon,
-.carousel span.carousel-control-next-icon,
-.carousel span.carousel-control-prev-icon,
-.carousel span.carousel-control-next-icon {
-  filter: invert(1)!important;
-}
 
   //video youtube lazy load
   .video-container {

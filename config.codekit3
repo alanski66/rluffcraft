@@ -1496,14 +1496,6 @@
       "oAP" : "\/templates\/_layouts\/chromeless-page-layout.twig",
       "oF" : 0
     },
-    "\/templates\/_layouts\/generic-page-layout copy.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/_layouts\/generic-page-layout copy.twig",
-      "oF" : 0
-    },
     "\/templates\/_layouts\/generic-page-layout.twig" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1518,14 +1510,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/templates\/_macros.twig",
-      "oF" : 0
-    },
-    "\/templates\/_partials\/carousel.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/_partials\/carousel.twig",
       "oF" : 0
     },
     "\/templates\/_partials\/cat-cards.twig" : {
@@ -1566,6 +1550,22 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/_partials\/hero-section.twig",
+      "oF" : 0
+    },
+    "\/templates\/_partials\/orgs.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/_partials\/orgs.twig",
+      "oF" : 0
+    },
+    "\/templates\/_partials\/testimonials-carousel.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/_partials\/testimonials-carousel.twig",
       "oF" : 0
     },
     "\/templates\/.gitkeep" : {
