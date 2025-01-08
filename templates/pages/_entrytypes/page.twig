@@ -13,25 +13,23 @@
             <div class="container ">
 
                 <div class="row ">
-                    <div class="col-12 pt-3">
-                        <div class="bg-white rounded mb-40">
-                            {# <h1 class="mb-3">{{ entry.title }}</h1> #}
+                    <div class="col-12 {% if entry.slug == "contact" %} col-md-6 offset-md-3 {% endif %} pt-0">
+                        {% if entry.slug == "contact" %}
+                            <img src="https://localhost:5757//assets/images/rebecca-trans-250x250.png" class="d-block mx-auto img-fluid rounded-circle bg-primary m-5" alt="Picture of Rebecca Luff" width="200" height="200">
+                            {% endif %}
+                        <div class="bg-white mt-5 {% if entry.slug == "contact" %} text-center {% endif %} ">
+                            
+                            
+                         
                            
-                           {% if entry.body | length %}{{entry.body}}{% endif %} 
+                           {% if entry.body | length %}{{entry.body }}{% endif %} 
+                           </div>
                             {% for block in entry.contentBuilder.all() %}
                             {% set blockPrefix = "" %}
                             {% include ('blocks/block_' ~ block.type.handle) %}
 
                             {% endfor %} 
-                            {# {% set lazyImage = false %}
-                            
-                            {% for block in entry.contentBuilder.all() %}
-                                {% include ('pages/_partials/_' ~ blockPrefix ~ 'block_' ~ block.type.handle) %}
-                                {% if block.type.handle == "image" %}
-                                    {% set lazyImage = true %}
-                                {% endif %}
-                            {% endfor %} #}
-                             {{entry.body}}
+                         
                         </div>
 
                     </div>
