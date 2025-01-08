@@ -6,7 +6,7 @@ searchable: false
 settings:
   availableTransforms: ''
   availableVolumes: '*'
-  ckeConfig: null
+  ckeConfig: 3b9ecd0a-e61a-481d-8254-4787941102e7 # Simple
   createButtonLabel: null
   defaultTransform: null
   enableSourceEditingForNonAdmins: false

@@ -15,7 +15,7 @@
             {% for block in slides %}
             {% set asset = block.logo.one ??  null %}
                 <a href="{{block.customLink}}" class="d-flex col-auto" target="_blank">
-                    <img class="d-flex px-3  m-3" src="{{asset.getUrl('logos') }}" width="auto" height="{{ asset.getHeight('logos') }}" alt="{{block.title}}"></a>
+                    <img class="d-flex m-2 p-1 px-sm-3  m-sm-3" src="{{asset.getUrl('logos') }}" width="auto" height="{{ asset.getHeight('logos') }}" alt="{{block.title}}"></a>
                     {% endfor %}
         </div>
 
