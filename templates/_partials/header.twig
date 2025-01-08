@@ -23,8 +23,8 @@
           {% endif %}
           {% set btnnav = "" %}
           {% set mnuClass = "" %}
-         
-          <li class="nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower }}">
+          
+          <li class="nav-item {{ macros.activeLinkClass(navlink, entry.level)|trim }} level{{ entry.level }} {{ entry.title |lower }} {%if loop.last%}last pe-0{%endif%}">
             <a id="{{ entry.title }}" href="{{ navlink }}" class="nav-link {{ macros.activeLinkClass(navlink, entry.level) |trim }} level{{ entry.level }} {{ mnuClass }}">{{entry.title }}</a>
           </li>
          
