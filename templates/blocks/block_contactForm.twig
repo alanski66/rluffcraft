@@ -49,25 +49,25 @@
                 </select>
                 </div>
             {% case "file" %}
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label>{{field.label}}</label>
                     <input class="form-control" type="file" name="{{field.name}}" id=""/>
                 </div>
             {% case "textarea" %}
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label>{{field.label}}</label>
                     <textarea class="form-control" name="{{field.name}}" id="">{{ values[field.name] ?? '' }}</textarea>
                 </div>
             {% case "list" %}
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label>{{field.label}}</label>
                     <input class="form-control" type="text" name="{{field.name}}[]" id=""/>
                     <script>//Javascript to handle adding fields</script>
                 </div>
             {% default %}
-                <div class="form-group">
+                <div class="form-group mb-3 mb-3">
                 <label>{{field.label}}</label>
-                <input class="form-control" class="form-control" type="{{field.type}}" value="{{ values[field.name] ?? '' }}" name="{{field.name}}" id=""/>
+                <input class="form-control" class="form-control dd" type="{{field.type}}" value="{{ values[field.name] ?? '' }}" name="{{field.name}}" id=""/>
                 </div>
         {% endswitch %}
         {{ wheelformErrors[field.name] is defined ? errorList(wheelformErrors[field.name]) }}

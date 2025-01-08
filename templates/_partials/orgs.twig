@@ -1,5 +1,8 @@
 <!-- carousel -->
 {% cache %}
+
+{% if orgSlider.hide == "0" %}
+
 {% set slides = orgSlider.slides %}
 
 <div class="orgs container-fluid bg-light-subtle mt-0 py-4 m-0">
@@ -22,4 +25,5 @@
 	
 	</div>
 </div>
+{% endif %}
 {% endcache %}
