@@ -3,13 +3,13 @@
 
 {% block content %}
     {%  set layout = null %}
-    <!--  Page Entry type default Content -->
+    <!--  pages/page Entry type Content -->
     {%  if entry is defined %}
 
         {# {% include '/_partials/hero-featured.twig' %} #}
         {% include('_partials/header-shallow')%}
 
-        <section class="generic py-5 ">
+        <section class="page pb-5 ">
             <div class="container ">
 
                 <div class="row ">
@@ -34,17 +34,6 @@
                              {{entry.body}}
                         </div>
 
-                    </div>
-                    <div class="col-lg-4">
-                        <!-- Sidebar -->
-                        <div class="bg-white px-4 py-4 sidebar-box-shadow">
-                            {# {% switch entry.type %}
-                                {%  case "" %}
-                            {% endswitch %}
-                            {%  include '/pages/_partials/_side_subnav-get-involved.twig' %}
-                            {%  include '/pages/_partials/_side_block_subscribe.twig' %} #}
-
-                        </div>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,5 @@
 // page header
-body.my-work section.balloon-header{
+body.my-work .balloon-header{
     background-image: none!important;
 }
 body.my-work img.balloon-people{
@@ -12,13 +12,13 @@ body.my-work img.balloon-people{
 }
 .balloon-header{
     // display: inline-flex;
-    position: absolute;
+    // position: absolute;
     background-image: url('../assets/images/balloon.png');
     background-repeat: no-repeat;
 //     width: 293px !important;
 //     height: 110px !important;
 //   top:0;
-    background-position:90% 52px;
+    background-position:109% 14px; //90% 52px;
   
 }
 // curve background
@@ -126,6 +126,9 @@ a.icon-link{
 //     // // margin-left:-60px;
 // }
 //footer
+.cats h5.card-title{
+  margin-left: -15px;
+}
 .testimonials .user-content{
   // height:100%;
 }
@@ -143,7 +146,7 @@ a.icon-link{
 //  height: 460px;
 }
 .user-image{
-  margin-bottom: -15px;
+  margin-bottom: -30px;
   z-index: 1;
   position: relative;
 }
@@ -246,30 +249,54 @@ figure{
 }
 
 .balloon-people{
-  right:22%;
-  top:55px
+  right: 19%;
+  top: -9px;
+  width: 54%;
 }
 @media only screen and (max-width: 600px) {
   .balloon-people{
-    right:-33%;
+    // right:-33%;
   }
 }
 
-// @include media-breakpoint-up(sm) {
+
     h1 {
       font-size: 1.4rem;
     }
-//   }
+   
+    @include media-breakpoint-up(sm) {
+      .balloon-people{
+        right: 22%;
+        top: -35px;
+        width: 54%;
+      }
+  }
   
   @include media-breakpoint-up(md) {
     h1 {
       font-size: 1.8rem;
+    }
+    .balloon-people{
+      right: 28%;
+      top: -3px;
+      width: 44%;
+    }
+    .cats h5.card-title{
+      margin-left: -26px;
     }
   }
 
   @include media-breakpoint-up(lg) {
     h1 {
       font-size: 2.3rem;
+    }
+    // work header
+    .balloon-people{
+      // right: 28%;
+      // top: -3px;
+      width: 34%;
+      left: 50%;
+      transform: translateX(-50%);
     }
     //testy carousel
     .testimonials .user-content{
@@ -279,6 +306,7 @@ figure{
     .carousel-control-next {
       top:10%;
     }
+
   }
 
   //video youtube lazy load
