@@ -1,6 +1,7 @@
 {% import '_macros' as macros %}
 
 {% block content %}
+{% cache %}
 <section class="testimonials container-fluid bg-light bg-gradient pt-5 p-md-5">
     <div class="container">
         <h3 class="text-center fw-light">Testimonials</h3>
@@ -57,4 +58,5 @@
     </div>
 
 </section>
+{% endcache %}
 {% endblock %}

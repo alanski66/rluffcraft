@@ -8,7 +8,7 @@
 
         {# {% include '/_partials/hero-featured.twig' %} #}
         {% include('_partials/header-shallow')%}
-
+{% cache %}
         <section class="page pb-5 ">
             <div class="container ">
 
@@ -40,6 +40,9 @@
                 </div>
             </div>
         </section>
+            
+{% endcache %}
+
     {%  endif %}
 
 {% endblock %}
