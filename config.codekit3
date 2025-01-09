@@ -71,9 +71,9 @@
     },
     "\/composer.json" : {
       "ft" : 524288,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/composer.json",
-      "oF" : 1,
+      "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
