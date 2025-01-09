@@ -1,0 +1,28 @@
+{% set myCategoryQuery = craft.categories()
+.group('work') %}
+{# Fetch the categories #}
+{% set categories = myCategoryQuery.all() %}
+<!-- work categories-->
+{% cache %}
+<section class="cats container py-5 g-4">
+<div class="row row-cols-1 row-cols-md-2 g-4">
+  {% for category in categories %}
+
+      {% set catAsset = category.categoryImage.one() ?? null %}
+      <div class="col-auto col-lg-6 col-xl-3 g-4">
+        <div class="card text-bg-ight mb-3 shadow border-0 h-100">
+
+          <div class="card-body p-4 pt-4 pb-4 p-md-5">
+            <h5 class="card-title">
+              <span class='d-flex-inline text-primary'>&nbsp;//&nbsp;</span>{{ category.title }}
+            </h5>
+            <p class="card-text">{{ category.categoryDescription |striptags|raw }}</p>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+</div>
+</section>
+
+{% endcache %}
+<!-- end work cats -->

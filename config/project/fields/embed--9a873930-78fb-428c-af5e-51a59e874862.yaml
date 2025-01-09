@@ -1,0 +1,10 @@
+columnSuffix: null
+handle: embed
+instructions: 'Use this to embed video , map etc'
+name: Embed
+searchable: false
+settings:
+  url: ''
+translationKeyFormat: null
+translationMethod: none
+type: wrav\oembed\fields\OembedField

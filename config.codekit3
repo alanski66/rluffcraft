@@ -1496,14 +1496,6 @@
       "oAP" : "\/templates\/_layouts\/chromeless-page-layout.twig",
       "oF" : 0
     },
-    "\/templates\/_layouts\/generic-page-layout copy.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/_layouts\/generic-page-layout copy.twig",
-      "oF" : 0
-    },
     "\/templates\/_layouts\/generic-page-layout.twig" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1520,12 +1512,28 @@
       "oAP" : "\/templates\/_macros.twig",
       "oF" : 0
     },
+    "\/templates\/_partials\/cat-cards.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/_partials\/cat-cards.twig",
+      "oF" : 0
+    },
     "\/templates\/_partials\/footer.twig" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/_partials\/footer.twig",
+      "oF" : 0
+    },
+    "\/templates\/_partials\/header-shallow.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/_partials\/header-shallow.twig",
       "oF" : 0
     },
     "\/templates\/_partials\/header.twig" : {
@@ -1544,12 +1552,100 @@
       "oAP" : "\/templates\/_partials\/hero-section.twig",
       "oF" : 0
     },
+    "\/templates\/_partials\/orgs.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/_partials\/orgs.twig",
+      "oF" : 0
+    },
+    "\/templates\/_partials\/testimonials-carousel.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/_partials\/testimonials-carousel.twig",
+      "oF" : 0
+    },
     "\/templates\/.gitkeep" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/.gitkeep",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_blockquote.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_blockquote.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_cardsWithIcon.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_cardsWithIcon.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_contactForm.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_contactForm.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_image.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_image.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_slider.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_slider.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_text.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_text.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_textWithImage.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_textWithImage.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_urlLink.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_urlLink.twig",
+      "oF" : 0
+    },
+    "\/templates\/blocks\/block_video.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/blocks\/block_video.twig",
       "oF" : 0
     },
     "\/templates\/content\/category-entry.twig" : {
@@ -1576,6 +1672,54 @@
       "oAP" : "\/templates\/index.twig",
       "oF" : 0
     },
+    "\/templates\/my-work\/_entry.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/templates\/my-work\/_entry.twig",
+      "oF" : 0
+    },
+    "\/templates\/my-work\/index.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/my-work\/index.twig",
+      "oF" : 0
+    },
+    "\/templates\/pages\/__old_partials\/block_cardsWithIcon.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/__old_partials\/block_cardsWithIcon.twig",
+      "oF" : 0
+    },
+    "\/templates\/pages\/__old_partials\/block_contactForm.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/__old_partials\/block_contactForm.twig",
+      "oF" : 0
+    },
+    "\/templates\/pages\/__old_partials\/block_text.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/__old_partials\/block_text.twig",
+      "oF" : 0
+    },
+    "\/templates\/pages\/__old_partials\/block_textWithImage.twig" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/templates\/pages\/__old_partials\/block_textWithImage.twig",
+      "oF" : 0
+    },
     "\/templates\/pages\/_default.twig" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1600,36 +1744,20 @@
       "oAP" : "\/templates\/pages\/_entrytypes\/page.twig",
       "oF" : 0
     },
-    "\/templates\/pages\/_partials\/block_cardsWithIcon.twig" : {
+    "\/templates\/testimonials\/index.twig" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/templates\/pages\/_partials\/block_cardsWithIcon.twig",
+      "oAP" : "\/templates\/testimonials\/index.twig",
       "oF" : 0
     },
-    "\/templates\/pages\/_partials\/block_contactForm.twig" : {
+    "\/templates\/work\/_entry.twig" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/pages\/_partials\/block_contactForm.twig",
-      "oF" : 0
-    },
-    "\/templates\/pages\/_partials\/block_text.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/pages\/_partials\/block_text.twig",
-      "oF" : 0
-    },
-    "\/templates\/pages\/_partials\/block_textWithImage.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/pages\/_partials\/block_textWithImage.twig",
+      "oA" : 1,
+      "oAP" : "\/templates\/work\/_entry.twig",
       "oF" : 0
     },
     "\/templates\/work\/index.twig" : {

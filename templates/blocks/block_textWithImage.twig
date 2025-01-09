@@ -1,0 +1,41 @@
+<!-- block text with image /blocks-->
+<section class="d-flex {{block.type}}">
+    <div class="container py-0 g-0">
+
+{% set asset = block.image.one() ?? null %}
+      {# <div class="row">
+        <div class="d-flex ">
+          <div class="block-image">
+            {% if asset|length %}            
+            <img src="{{asset.getUrl('article')}}" class="mt-2  {% if block.title | length %}mt-5{%endif%} img-fluid {{block.align}}" />
+          {% endif %}
+          {% if block.title | length %}
+          <h3 class=" fw-semibold  lh-1 mb-3">{{block.title}}</h3>
+          {% endif %}
+          {% if block.body | length %}{{block.body}}{% endif %} 
+          </div>
+          <div class="block-body"> </div>
+        </div>
+      </div> #}
+        <div class="row">
+         
+          <div class="col-12  col-md-7 order-last order-md-first">
+            
+            {% if block.title | length %}
+            <h3 class=" fw-semibold text-body-emphasis lh-1 mb-3">{{block.title}}</h3>
+            {% endif %}
+            
+              {% if block.body | length %}{{block.body}}{% endif %} 
+              {% if block.entryLink | length %}
+              <a href="{{block.entryLink.one().url}}" class="btn btn-primary btn-lg px-4 me-md-2" href="">Primary</a>
+              {% endif %} 
+            
+          </div>
+          <div class="col-12  col-md-5 order-first order-md-last pb-3">
+            {% if block.image|length %}            
+              <img src="{{block.image.one().url}}" class="{% if block.title | length %}mt-5 {% endif %} mb-3 shadow img-fluid ps-0 pb-0" />
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </section>  

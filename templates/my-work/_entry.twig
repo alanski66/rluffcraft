@@ -1,0 +1,99 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+{% import '_macros' as macro %}
+
+{% block content %}
+
+
+
+{% cache %}
+
+{% include('_partials/header-shallow')%}
+
+<section class="container position-relative">
+
+
+
+        {# {% set videoAsset = entry.embed.media.data.thumbnail_url ?? null %} #}
+
+        {# {% set imgAsset = entry.image.one() ?? null %} #}
+
+
+        {% set asset = entry.image.one() ?? null %}
+        {% set video = entry.mediaEmbed.one() ?? null %}
+
+        {# {% set asset = entry.embed.media.url ?? null %}
+        {% do asset.setTransform('article') %}
+        {% if asset |length %}
+        {% set asset = asset %}
+        {% else %}
+
+        {% endif %} #}
+
+
+
+
+        <div class="row  flex-md-row mb-4 h-md-250 position-relative ">
+            <div class="col-12 pt-5 col-md-12 col-lg-7 d-flex flex-column ">
+                <h3 class="">{{entry.title}}</h3>
+
+                {% if asset | length %}
+                <img class="d-lg-none img-fluid mb-3" loading="lazy" src="">
+                {% endif %}
+                <div class="body">
+                    {% if entry.body | length %}{{entry.body}}{% endif %}
+                </div>
+                {% if entry.quote | length %}
+                <div class="d-flex flex-column position-relative">
+                    <img src="{{ baseUrl}}/css/quote.png" class="quote-image mb-3" />
+                    <blockquote class="blockquote fs-6">
+                        <p>{{entry.quote|raw}}
+                        </p>
+
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        {{entry.quoteAuthor}} <cite title="Source Title">{{entry.quoteSource}}</cite>
+                    </figcaption>
+                </div>
+                {% endif %}
+
+                {% if entry.urlLink | length %}
+                <a href="{{entry.urlLink}}" class=" icon-link d-flex d-inline-flex">
+                    {{entry.urlLinkText | default ('Find out more') }}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                        <path fill-rule="evenodd"
+                            d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                    </svg>
+                </a>
+                {% endif %}
+            </div>
+
+            <div class="col-12 py-5 col-md-12 col-lg-5  justify-content-center align-items-center">
+                {% if video |length %}
+                {% set embeddedAsset = craft.embeddedAssets.get(video) %}
+                {% if embeddedAsset | length and embeddedAsset.type == "video" %}
+                <div class="ratio ratio-4x3">
+                    {{ embeddedAsset.html }}
+                </div>
+                {% endif %}
+                {% else %}
+                <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset.url }}">
+                
+                {% endif %}
+            </div>
+
+            {# {% if asset | length %}
+            <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset }}">
+            {% endif %} #}
+
+        </div>
+    </div>
+
+
+
+</section>
+{# {% js baseUrl ~ "js/video-lazy-load.js" %} #}
+{% endcache %}
+{% endblock %}

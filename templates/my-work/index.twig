@@ -1,0 +1,73 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+{% set bodyClass = entry.slug %}
+{% block content %}
+{% include('_partials/header-shallow')%}
+
+{% include('_partials/cat-cards') %}
+<section class="container d-fl ex position-relative g-5">
+
+    {% set entries = craft.entries.section('work').limit(20).all() %}
+    {% for entry in entries %}
+
+    {% set asset = entry.image.eagerly().one() ?? null %}
+    {% set video = entry.mediaEmbed.one() ?? null %}
+
+
+    <div class="row  flex-m-row  h-md-250 position-relative py-5 mb-5 shadow">
+        <div class="col-12 col-md-12 col-lg-7 d-flex flex-column px-5">
+            <a class="link-underline link-underline-opacity-0" href="{{entry.url}}"><h3 class="">{{entry.title}}</h3></a>
+            {% if asset | length %}
+            <img class="d-lg-none img-fluid mb-3" loading="lazy" src="{{ asset.url}}">
+
+            {% endif %}
+            <div class="body">
+                {% if entry.body | length %}{{entry.body}}{% endif %}
+            </div>
+            {% if entry.quote | length %}
+            <div class="d-flex flex-column position-relative">
+                <img src="{{ baseUrl}}/css/quote.png" class="quote-image mb-3" />
+                <blockquote class="blockquote fs-6">
+                    <p>{{entry.quote|raw}}
+                    </p>
+
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                    {{entry.quoteAuthor}} <cite title="Source Title">{{entry.quoteSource}}</cite>
+                </figcaption>
+            </div>
+            {% endif %}
+
+            {% if entry.urlLink | length %}
+            <a href="{{entry.urlLink}}" class=" icon-link d-flex d-inline-flex">
+                {{entry.urlLinkText | default ('Find out more') }}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+                    <path fill-rule="evenodd"
+                        d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+                </svg>
+            </a>
+            {% endif %}
+        </div>
+
+        <div class="col-12 col-md-12 col-lg-5 d-flex justify-content-end align-items-start mt-3 px-5">
+            {% if video |length %}
+            {% set embeddedAsset = craft.embeddedAssets.get(video) %}
+            {% if embeddedAsset | length and embeddedAsset.type == "video" %}
+            <div class="ratio ratio-4x3">
+                {{ embeddedAsset.html }}
+            </div>
+            {% endif %}
+            {% else %}
+            <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset.getUrl('article') }}">
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+
+
+</section>
+
+{% endblock %}

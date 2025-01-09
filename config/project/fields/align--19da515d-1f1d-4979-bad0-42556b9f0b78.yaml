@@ -9,8 +9,14 @@ settings:
     -
       __assoc__:
         -
-          - optgroup
+          - label
           - Default
+        -
+          - value
+          - float-none
+        -
+          - default
+          - '1'
     -
       __assoc__:
         -
@@ -18,7 +24,7 @@ settings:
           - 'Left '
         -
           - value
-          - float-start
+          - 'float-start pe-5 pb-5'
         -
           - default
           - ''
@@ -29,7 +35,7 @@ settings:
           - Right
         -
           - value
-          - float-end
+          - 'float-end ps-5 pb-5'
         -
           - default
           - ''

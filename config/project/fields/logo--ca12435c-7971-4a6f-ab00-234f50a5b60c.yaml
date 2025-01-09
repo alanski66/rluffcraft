@@ -14,21 +14,21 @@ settings:
   maintainHierarchy: false
   maxRelations: 1
   minRelations: null
-  previewMode: full
+  previewMode: thumbs
   restrictFiles: false
-  restrictLocation: false
+  restrictLocation: true
   restrictedDefaultUploadSubpath: null
-  restrictedLocationSource: 'volume:97e342cd-a55e-42c9-99d5-de73541a4860' # Images
+  restrictedLocationSource: 'volume:f616d33b-e4fe-4da9-859d-11a862b0ca00' # Organisation logos
   restrictedLocationSubpath: null
   selectionLabel: null
   showCardsInGrid: false
-  showSiteMenu: false
+  showSiteMenu: true
   showUnpermittedFiles: false
   showUnpermittedVolumes: false
   sources: '*'
   targetSiteId: null
   validateRelatedElements: false
-  viewMode: list
+  viewMode: cards
 translationKeyFormat: null
 translationMethod: none
 type: craft\fields\Assets

@@ -1,4 +1,12 @@
+
+.env
 /.env
+.tt
 /.idea
 /vendor
+/public_html/assets
+public_html/assets
+node_modules/** 
+scripts/** 
+/scripts/** 
 .DS_Store

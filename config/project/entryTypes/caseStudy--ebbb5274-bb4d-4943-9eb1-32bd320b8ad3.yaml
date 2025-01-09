@@ -36,22 +36,6 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-29T19:29:03+00:00'
-            elementCondition: null
-            fieldUid: 0aad6b5b-d3fa-4b2d-b5c5-0537467930b4 # Category
-            handle: null
-            includeInCards: false
-            instructions: null
-            label: null
-            providesThumbs: false
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: de71621b-6947-46b1-8fc1-3a4c4756bec1
-            userCondition: null
-            warning: null
-            width: 100
-          -
             dateAdded: '2024-12-29T19:50:36+00:00'
             elementCondition: null
             fieldUid: 0a0a61db-c42b-49a9-b6cd-9a96be13752e # Intro
@@ -66,7 +50,7 @@ fieldLayouts:
             uid: 03e3ac3a-f16a-4196-b88f-c27d99518096
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             dateAdded: '2024-12-31T13:26:06+00:00'
             elementCondition: null
@@ -82,7 +66,7 @@ fieldLayouts:
             uid: 026b3318-a552-4d59-a31a-7bf72cf57483
             userCondition: null
             warning: null
-            width: 100
+            width: 50
           -
             dateAdded: '2024-12-29T19:29:51+00:00'
             elementCondition: null
@@ -100,9 +84,9 @@ fieldLayouts:
             warning: null
             width: 100
           -
-            dateAdded: '2024-12-31T13:26:06+00:00'
+            dateAdded: '2025-01-05T11:53:00+00:00'
             elementCondition: null
-            fieldUid: 7e35174b-e100-46d4-9d3b-c6127c0923ab # Content builder
+            fieldUid: 11c02d72-eede-4b3c-916a-cb8b112a6324 # Url Link text
             handle: null
             includeInCards: false
             instructions: null
@@ -111,7 +95,110 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: ece89262-983f-4b8b-b280-40e77b99a9a1
+            uid: f0b9b073-8a19-47f8-9e36-9b1dcd9b37cc
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-03T14:15:11+00:00'
+            elementCondition: null
+            fieldUid: 274bbbf8-3795-475d-b50b-e2d36fc6cc20 # Url link
+            handle: null
+            includeInCards: false
+            instructions: 'Use this for external links related to the content'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac09d79b-de34-4178-940d-e43cb153271c
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2025-01-03T14:25:42+00:00'
+            elementCondition: null
+            heading: 'Quote or testimonial'
+            type: craft\fieldlayoutelements\Heading
+            uid: f9e2bb0d-8212-4008-aac3-a6f72a7fe775
+            userCondition: null
+          -
+            dateAdded: '2025-01-03T14:15:11+00:00'
+            elementCondition: null
+            fieldUid: ae10a9d7-2e31-45bd-a334-d6fe39c19379 # Quote
+            handle: null
+            includeInCards: false
+            instructions: 'Do not style'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5aadd562-77be-4510-8763-266d1a9a72da
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-03T14:15:11+00:00'
+            elementCondition: null
+            fieldUid: f93a249c-cf72-4147-ac0d-64ed87954734 # Quote author
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1b90e869-0301-4395-b408-c2a10d46d668
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-03T14:15:11+00:00'
+            elementCondition: null
+            fieldUid: febc5ab2-f658-4720-a0e4-8497c27bebc2 # Quote source
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9463b131-1ba2-4e29-94a2-3e2e71afe8c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-06T23:29:19+00:00'
+            elementCondition: null
+            fieldUid: 5ce4c45c-4533-4cba-8c45-36bfee218660 # Media embed
+            handle: null
+            includeInCards: false
+            instructions: 'Replace embed video by clikcing add button then find embed button next to upload. Add your url here and save'
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 804b6500-e858-4c60-9f25-49c5d0db00b1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-03T14:52:34+00:00'
+            elementCondition: null
+            fieldUid: 9a873930-78fb-428c-af5e-51a59e874862 # Embed
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 044027d2-33d6-47cc-acdb-b07a06f59a6e
             userCondition: null
             warning: null
             width: 100
