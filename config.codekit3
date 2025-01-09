@@ -13,55 +13,67 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.env",
-      "oF" : 1
+      "oF" : 0
     },
     "\/.env.example.dev" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.env.example.dev",
-      "oF" : 1
+      "oF" : 0
     },
     "\/.env.example.production" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.env.example.production",
-      "oF" : 1
+      "oF" : 0
     },
     "\/.env.example.staging" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.env.example.staging",
-      "oF" : 1
+      "oF" : 0
     },
     "\/.gitignore" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/.gitignore",
-      "oF" : 1
+      "oF" : 0
+    },
+    "\/backups" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/backups",
+      "oF" : 0
     },
     "\/bootstrap.php" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/bootstrap.php",
-      "oF" : 1
+      "oF" : 0
+    },
+    "\/build" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/build",
+      "oF" : 0
     },
     "\/composer.json" : {
       "ft" : 524288,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/composer.json",
-      "oF" : 1,
+      "oF" : 0,
       "oO" : 1,
       "oS" : 1
     },
@@ -69,9 +81,9 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/composer.lock",
-      "oF" : 1
+      "oF" : 0
     },
     "\/config" : {
       "ft" : 65536,
@@ -83,9 +95,15 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/craft",
-      "oF" : 1
+      "oF" : 0
+    },
+    "\/node_modules" : {
+      "ft" : 65536,
+      "oA" : 2,
+      "oAP" : "\/node_modules",
+      "oF" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
@@ -113,9 +131,15 @@
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
-      "oA" : 1,
+      "oA" : 0,
       "oAP" : "\/rluffcraft.code-workspace",
-      "oF" : 1
+      "oF" : 0
+    },
+    "\/scripts" : {
+      "ft" : 65536,
+      "oA" : 1,
+      "oAP" : "\/scripts",
+      "oF" : 0
     },
     "\/src\/scss\/_custom_variables.scss" : {
       "aP" : 1,
@@ -1633,14 +1657,14 @@
     "creationDate" : 757284990.41065097,
     "displayValue" : "rluffcraft",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "\/public_html\/cpresources\/877fcdfa\/images\/icons\/apple-touch-icon.png",
+    "iconImageName" : "meme-daenerys",
     "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
     "abortBuildOnError" : 0,
     "allowInjectionReloads" : 1,
     "alwaysUseExternalServer" : 1,
-    "animateCSSInjections" : 1,
+    "animateCSSInjections" : 0,
     "autoBuildNewItems" : 0,
     "autoprefixerEnableIEGrid" : 0,
     "babel7PresetType" : 1,
@@ -3158,7 +3182,7 @@
     "npmInstallOptionalDependencies" : 0,
     "npmSaveExactVersion" : 0,
     "npmTargetDependencyListType" : 1,
-    "overrideExternalServerCSS" : 0,
+    "overrideExternalServerCSS" : 1,
     "previewPathAddition" : "",
     "purgeCSS" : {
       "blocklistEntries" : [
@@ -3202,7 +3226,7 @@
     "rollupTreeshakingEnabled" : 0,
     "rollupTreeshakingModuleSideEffects" : 1,
     "sassWarningStyle" : 2,
-    "skippedFoldersString" : "\/vendor,\/storage\/framework\/sessions,\/storage,\/public_html,node_modules,_logs,logs,log,.idea,\/config,_cache,cache",
+    "skippedFoldersString" : "\/storage,\/build,\/public_html,cache,.idea,log,node_modules,logs,\/storage\/framework\/sessions,_logs,_cache,\/scripts,\/backups,\/vendor,\/config",
     "sourceFolderName" : "src",
     "susyVersion" : 3,
     "tsAllowArbitraryExtensions" : 0,
