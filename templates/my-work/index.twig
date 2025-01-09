@@ -16,7 +16,7 @@
 
     <div class="row  flex-m-row  h-md-250 position-relative py-5 mb-5 shadow">
         <div class="col-12 col-md-12 col-lg-7 d-flex flex-column px-5">
-            <h3 class="">{{entry.title}}</h3>
+            <a class="link-underline link-underline-opacity-0" href="{{entry.url}}"><h3 class="">{{entry.title}}</h3></a>
             {% if asset | length %}
             <img class="d-lg-none img-fluid mb-3" loading="lazy" src="{{ asset.url}}">
 

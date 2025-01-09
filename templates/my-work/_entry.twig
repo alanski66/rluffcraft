@@ -7,10 +7,9 @@
 
 {% cache %}
 
+{% include('_partials/header-shallow')%}
 
-
-<section class=" d-flex position-relative">
-    <div class="container position-relative">
+<section class="container position-relative">
 
 
 
@@ -34,7 +33,7 @@
 
 
         <div class="row  flex-md-row mb-4 h-md-250 position-relative ">
-            <div class="col-12 p-5 col-md-12 col-lg-7 d-flex flex-column ">
+            <div class="col-12 pt-5 col-md-12 col-lg-7 d-flex flex-column ">
                 <h3 class="">{{entry.title}}</h3>
 
                 {% if asset | length %}
@@ -93,7 +92,7 @@
     </div>
 
 
-    </div>
+
 </section>
 {# {% js baseUrl ~ "js/video-lazy-load.js" %} #}
 {% endcache %}

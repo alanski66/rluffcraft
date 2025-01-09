@@ -1672,14 +1672,6 @@
       "oAP" : "\/templates\/index.twig",
       "oF" : 0
     },
-    "\/templates\/my-work\/_entry copy.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/templates\/my-work\/_entry copy.twig",
-      "oF" : 0
-    },
     "\/templates\/my-work\/_entry.twig" : {
       "cB" : 0,
       "ft" : 8192,
@@ -1694,14 +1686,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/templates\/my-work\/index.twig",
-      "oF" : 0
-    },
-    "\/templates\/my-work\/video-time-example.twig" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/templates\/my-work\/video-time-example.twig",
       "oF" : 0
     },
     "\/templates\/pages\/__old_partials\/block_cardsWithIcon.twig" : {
