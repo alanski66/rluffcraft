@@ -11,7 +11,6 @@
                 {% set entries = craft.entries.section('testimonials').limit(20).all() %}
                 {% for entry in entries %}
 
-
                 {% set asset = entry.testimonialPhoto.one() ?? null %}
                 {% if asset|length %}
 
