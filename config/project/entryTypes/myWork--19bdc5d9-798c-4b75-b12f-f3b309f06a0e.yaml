@@ -70,6 +70,28 @@ fieldLayouts:
         name: Content
         uid: 98f475eb-d5f0-4047-9925-730e2aca3683
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-08T15:57:54+00:00'
+            elementCondition: null
+            fieldUid: b9c4f964-3733-467b-b83e-e3802aa7b65f # SEO
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d33da248-03ef-4e61-a40a-a4e570ddefb6
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: bcceb480-cc36-4f7e-83dd-67273fa56eb4
+        userCondition: null
 handle: myWork
 hasTitleField: true
 icon: null

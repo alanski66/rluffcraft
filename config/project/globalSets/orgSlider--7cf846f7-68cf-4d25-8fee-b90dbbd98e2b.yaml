@@ -5,6 +5,22 @@ fieldLayouts:
         elementCondition: null
         elements:
           -
+            dateAdded: '2025-01-08T15:39:31+00:00'
+            elementCondition: null
+            fieldUid: d7380970-42a0-4ec7-a316-3c598543fe40 # Hide
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac9bf1c6-4873-4470-959a-82acd8e8d4aa
+            userCondition: null
+            warning: null
+            width: 100
+          -
             dateAdded: '2025-01-04T16:50:16+00:00'
             elementCondition: null
             fieldUid: f872b337-7e6b-41fc-9347-2f722d19098a # Section heading

@@ -1,4 +1,4 @@
-dateModified: 1736349287
+dateModified: 1736605669
 elementSources:
   craft\elements\Entry:
     -
@@ -45,6 +45,7 @@ elementSources:
         - link
         - 'field:381ca719-b0cc-4bba-9b7d-4f65f18f781f' # Image
         - 'field:5ce4c45c-4533-4cba-8c45-36bfee218660' # Media embed
+        - slug
       type: native
     -
       heading: 'Channel content'
@@ -58,9 +59,29 @@ elementSources:
     -
       key: 'section:ece3f4c3-b556-4a0d-a0b4-9eed0b80a916' # Menu
       type: native
+    -
+      heading: Testimonials
+      type: heading
+    -
+      defaultSort:
+        - structure
+        - asc
+      defaultViewMode: ''
+      disabled: false
+      key: 'section:e100ddb2-becd-489a-951b-0f9f370e60ff' # Testimonials
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+      type: native
 email:
-  fromEmail: alan@craftcode.co.uk
+  fromEmail: info@rebeccaluff.com
   fromName: 'Rebecca Luff'
+  replyToEmail: null
+  template: null
+  transportSettings:
+    command: '/usr/sbin/sendmail -t -i'
   transportType: craft\mail\transportadapters\Sendmail
 fs:
   images:
@@ -157,6 +178,7 @@ meta:
     c8b7c380-97a5-4713-877d-421be3db3fcb: Words # Words
     ca12435c-7971-4a6f-ab00-234f50a5b60c: logo # logo
     d6c6cec4-191b-426a-b37c-6438f8677132: Video # Video
+    d7380970-42a0-4ec7-a316-3c598543fe40: Hide # Hide
     dfbecf23-f0aa-4d69-9909-4d13e6bcae60: _Blockquote # _Blockquote
     e100ddb2-becd-489a-951b-0f9f370e60ff: Testimonials # Testimonials
     e38830f8-1fcf-495a-b446-d72cfabe43c3: Home # Home
@@ -197,7 +219,7 @@ plugins:
     schemaVersion: 1.0.0
   minify:
     edition: standard
-    enabled: false
+    enabled: true
     schemaVersion: 1.0.0
   oembed:
     edition: standard
@@ -222,7 +244,8 @@ plugins:
       robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
       sitemapLimit: '1000'
       sitemapName: sitemap
-      socialImage: ''
+      socialImage:
+        - '593'
       title:
         -
           __assoc__:
