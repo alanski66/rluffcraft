@@ -21,6 +21,13 @@ body.my-work img.balloon-people{
     background-position:109% 14px; //90% 52px;
   
 }
+
+.article{
+  background-color: $white;
+}
+.article.loop1{
+  background: rgba(255, 255, 255, 0.95);
+}
 // curve background
 .curve {
     position: absolute;
@@ -269,12 +276,14 @@ figure{
 
 .balloon-people{
   right: 19%;
-  top: -9px;
+  top: -190px;
   width: 54%;
+  
 }
 @media only screen and (max-width: 600px) {
   .balloon-people{
     // right:-33%;
+    top: -140px;
   }
 }
 
@@ -285,9 +294,10 @@ figure{
    
     @include media-breakpoint-up(sm) {
       .balloon-people{
-        right: 22%;
-        top: -35px;
+        right: 18%;
+        top: -185px;
         width: 54%;
+        
       }
   }
   
@@ -297,7 +307,7 @@ figure{
     }
     .balloon-people{
       right: 28%;
-      top: -3px;
+      // top: -3px;
       width: 44%;
     }
     .cats h5.card-title{
@@ -312,7 +322,7 @@ figure{
     // work header
     .balloon-people{
       // right: 28%;
-      // top: -3px;
+      top: -203px;
       width: 34%;
       left: 50%;
       transform: translateX(-50%);
