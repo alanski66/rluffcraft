@@ -4,8 +4,8 @@
 
 <section class="bg-light d-flex">
   <div class="container">
-    <div class="col-12 d-none d-md-block d-lg-none d-flex mx-auto fs-6">
-      {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp; </span>" })|raw }}
+    <div class="col-12 d-none d-md-block d-lg-none d-flex mx-auto fs-5 strapwords">
+      {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp;</span>" })|raw }}
     </div>
     <div class="row flex-sm-row-reverse align-items-center align-items-md-end align-items-lg-center">
      
@@ -26,7 +26,7 @@
           height=" {{asset.height}}" loading="lazy">
       </div>
       <div class="2nd col-12  col-md-6 col-lg-6 justify-content-md-start pb-5">
-        <div class="col-12 d-none d-lg-block d-flex mx-auto fs-6">
+        <div class="col-12 d-none d-lg-block d-flex mx-auto fs-5 strapwords">
           {{ entry.words |replace({',': "<span class='d-inline text-primary'>&nbsp;//&nbsp;</span>" })|raw }}
         </div>
         <h1 class="d-flex justify-content-center text-center text-md-start fw-semibold text-body-emphasis lh-2 my-5">
