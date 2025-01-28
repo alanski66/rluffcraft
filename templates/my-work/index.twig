@@ -8,7 +8,7 @@
 <section class="container position-relative g-5 py-5 ">
     <div class="container position-relative z-0" >
         <img class="d-none d-lg-block img-fluid position-absolute balloon-people z-0"
-        src="https://craft.rebeccaluff.com/assets/images/floating-girl-with-balloon.png" >
+        src="{{baseUrl}}/assets/images/floating-girl-with-balloon.png" >
     </div>
     {% set entries = craft.entries.section('work').limit(20).all() %}
     {% for entry in entries %}
