@@ -1,4 +1,4 @@
-dateModified: 1736605669
+dateModified: 1736700166
 elementSources:
   craft\elements\Entry:
     -
@@ -205,6 +205,14 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.1
+    settings:
+      apiKey: 8uzaranu4e9a5uq
+      enableBotDetector: true
+      enableFirewall: true
+      enableJS: true
+      enableUserRegistration: true
+      integrations:
+        - wheelform
   cp-field-inspect:
     edition: standard
     enabled: true
@@ -225,6 +233,10 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 1.0.1
+  postmark:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.0.1
   seo:
     edition: standard
     enabled: true
