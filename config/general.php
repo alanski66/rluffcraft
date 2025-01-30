@@ -54,6 +54,6 @@ return [
 
     // Production environment settings
     'production' => [
-      
+      'defaultWeekStartDay' => 0,
     ],
 ];
