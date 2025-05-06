@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 25a52d86-943d-4f23-b9c4-c07336f7abdb # Testimonial
+  -
+    uid: 25a52d86-943d-4f23-b9c4-c07336f7abdb # Testimonial
 handle: testimonials
 maxAuthors: 1
 name: Testimonials

@@ -7,7 +7,11 @@ settings:
   createButtonLabel: null
   defaultIndexViewMode: cards
   entryTypes:
-    - 704e537a-84b7-43df-a20f-bfb7cf1580b4 # _Slide
+    -
+      __assoc__:
+        -
+          - uid
+          - 704e537a-84b7-43df-a20f-bfb7cf1580b4 # _Slide
   includeTableView: false
   maxEntries: null
   minEntries: null

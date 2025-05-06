@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 19bdc5d9-798c-4b75-b12f-f3b309f06a0e # My work
+  -
+    uid: 19bdc5d9-798c-4b75-b12f-f3b309f06a0e # My work
 handle: mywork
 maxAuthors: 1
 name: 'My Work'
