@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 1a2a8073-e10c-432b-841d-63f885e96036 # Menu
+  -
+    uid: 1a2a8073-e10c-432b-841d-63f885e96036 # Menu
 handle: menu
 maxAuthors: 1
 name: Menu

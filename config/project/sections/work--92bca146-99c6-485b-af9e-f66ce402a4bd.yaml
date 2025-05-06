@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - ebbb5274-bb4d-4943-9eb1-32bd320b8ad3 # Case study
+  -
+    uid: ebbb5274-bb4d-4943-9eb1-32bd320b8ad3 # Case study
 handle: work
 maxAuthors: 1
 name: 'My Work mini case studies'
@@ -23,7 +24,7 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: my-work/_entry.twig
-    uriFormat: '{% if object.level == 1 %}{category.inReverse().one().uri}/{slug}{% else %}{parent.uri}/{slug}{% endif %}'
+    uriFormat: 'my-work/{% if object.level == 1 %}{category.inReverse().one().uri}/{slug}{% else %}{parent.uri}/{slug}{% endif %}'
 structure:
   maxLevels: null
   uid: 72024e99-29c3-4979-a2b9-1f79db7408ce

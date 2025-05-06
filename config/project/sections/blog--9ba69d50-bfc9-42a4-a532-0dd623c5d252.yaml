@@ -1,7 +1,8 @@
 defaultPlacement: end
 enableVersioning: true
 entryTypes:
-  - 833f8aa3-702e-4829-a2c5-272361210dbb # Content builder
+  -
+    uid: 833f8aa3-702e-4829-a2c5-272361210dbb # Content builder
 handle: blog
 maxAuthors: 1
 name: Blog

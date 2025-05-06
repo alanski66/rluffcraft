@@ -4,9 +4,11 @@ instructions: null
 name: 'Url link'
 searchable: false
 settings:
+  advancedFields:
+    - target
+  fullGraphqlData: false
   maxLength: 255
   showLabelField: false
-  showTargetField: false
   typeSettings:
     __assoc__:
       -

@@ -100,7 +100,7 @@ LOCAL_BACKUPS_PATH="/Users/alansparkes/sites/rluffcraft/backups/"
 REMOTE_DB_USING_SSH="yes"
 # Remote path constants; paths should always have a trailing /
 
-REMOTE_ROOT_PATH="/home/rebeccaluff/craft/"
+REMOTE_ROOT_PATH="/home/rebeccaluff/"
 REMOTE_ASSETS_PATH=${REMOTE_ROOT_PATH}"public_html/assets/"
 
 # Remote database constants; default port for mysql is 3306, default port for postgres is 5432
@@ -127,7 +127,7 @@ REMOTE_PSQL_CMD="psql"
 REMOTE_PG_DUMP_CMD="pg_dump"
 
 # Remote backups path; paths should always have a trailing /
-REMOTE_BACKUPS_PATH="/home/rebeccaluff/craft/backups/"
+REMOTE_BACKUPS_PATH="/home/rebeccaluff/backups/"
 
 # Remote Amazon S3 bucket name
 REMOTE_S3_BUCKET=""
