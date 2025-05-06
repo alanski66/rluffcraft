@@ -1,0 +1,124 @@
+color: null
+fieldLayouts:
+  5fbc6939-6781-4297-b5f7-1a796af217f5:
+    cardView:
+      - 'layoutElement:47c947b3-16b7-463c-87c5-641aee7a918f'
+      - link
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-30T19:11:25+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: Heading
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            required: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 5df9e27d-05f0-4d76-8a8b-dc3016bfb26b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-30T19:15:41+00:00'
+            elementCondition: null
+            fieldUid: 02a30bda-d2b5-41f6-ba9b-8ce888e8e6ae # Body
+            handle: null
+            includeInCards: true
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47c947b3-16b7-463c-87c5-641aee7a918f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-30T20:24:00+00:00'
+            elementCondition: null
+            fieldUid: edabf163-bcdc-46d6-8b79-16af15f8c9a7 # entry link
+            handle: null
+            includeInCards: false
+            instructions: 'Select a page to link to'
+            label: 'Button link'
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5a431a12-80c5-4eb3-8db9-db32b6842bfe
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-30T19:36:02+00:00'
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 1232e367-e460-4964-b09b-ec6123e883f6
+            userCondition: null
+          -
+            dateAdded: '2024-12-30T19:15:41+00:00'
+            elementCondition: null
+            fieldUid: 381ca719-b0cc-4bba-9b7d-4f65f18f781f # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 953956e5-ef25-4377-af9d-62bd8764959e
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            dateAdded: '2024-12-30T19:36:02+00:00'
+            elementCondition: null
+            fieldUid: 19da515d-1f1d-4979-bad0-42556b9f0b78 # Align
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e27110ae-04bf-40be-901d-25a6f37881b5
+            userCondition: null
+            warning: null
+            width: 50
+        name: 'Text and image'
+        uid: de40c372-e69b-4902-902d-f8d48152f689
+        userCondition: null
+handle: textWithImage
+hasTitleField: true
+icon: null
+name: '_Text with image'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -1,0 +1,124 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  25701d1d-11bc-4842-b20e-617350115886:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-29T17:01:00+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: e75b4af4-5392-4418-8ccd-5b01fe3de63c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            attribute: alt
+            class: null
+            cols: null
+            dateAdded: '2024-12-29T17:02:18+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            instructions: null
+            label: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: true
+            required: false
+            rows: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AltField
+            uid: c19f03c1-6715-4875-a462-09f0cf2fcab5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-29T17:05:30+00:00'
+            elementCondition: null
+            fieldUid: b2b15e5c-80c6-4bff-b6d1-e09b1bb48fac # Unsplash author
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e0e3b9d-e4b5-428f-af17-9e7825f3b077
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-29T17:05:30+00:00'
+            elementCondition: null
+            fieldUid: 57a9f983-128e-4777-998d-57ad443ae51d # Unsplash url
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 320f9d66-78e1-4b27-9619-98ac474d0a07
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-29T17:06:56+00:00'
+            elementCondition: null
+            fieldUid: 0feb6d1d-66c8-449f-a182-59ce63dc231a # Unsplash color
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 664a44f3-8f99-4871-aa3b-c6ae4850741a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c1796aa4-1714-4f10-80f5-7e05c0d29888
+        userCondition: null
+fs: images
+handle: images
+name: Images
+sortOrder: 1
+subpath: images
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: images

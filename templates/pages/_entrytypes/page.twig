@@ -1,0 +1,48 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+{% import '_macros' as macros %}
+
+{% block content %}
+    {%  set layout = null %}
+    <!--  pages/page Entry type Content -->
+    {%  if entry is defined %}
+
+        {# {% include '/_partials/hero-featured.twig' %} #}
+        {% include('_partials/header-shallow')%}
+{% cache %}
+        <section class="page pb-5 ">
+            <div class="container ">
+
+                <div class="row ">
+                    <div class="col-12 {% if entry.slug == "contact" %} col-md-6 offset-md-3 text-center {% endif %} pt-2 pt-sm-5 position-relative">
+                        {% if entry.slug == "contact" %}
+                            <img src="{{baseUrl}}assets/images/rebecca-trans-250x250.png" class="d-block mx-auto img-fluid rounded-circle bg-primary m-5" alt="Picture of Rebecca Luff" width="200" height="200">
+                            {% endif %}
+                        
+                            
+                            
+                         
+                           
+                           {% if entry.body | length %}
+                           <div class="bg-white mt-5 "></div>
+                           {{entry.body }}
+                            </div>
+                           {% endif %} 
+                           
+                            {% for block in entry.contentBuilder.all() %}
+                            {% set blockPrefix = "" %}
+                            {% include ('blocks/block_' ~ block.type.handle) %}
+
+                            {% endfor %} 
+                         
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+{% endcache %}
+
+    {%  endif %}
+
+{% endblock %}

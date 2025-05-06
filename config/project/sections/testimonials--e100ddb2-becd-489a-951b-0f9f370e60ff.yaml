@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - 25a52d86-943d-4f23-b9c4-c07336f7abdb # Testimonial
+handle: testimonials
+maxAuthors: 1
+name: Testimonials
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  44796fd5-bb11-438e-893b-74cd6f43996f: # Rebecca Luff
+    enabledByDefault: true
+    hasUrls: true
+    template: testimonials/_entry.twig
+    uriFormat: 'testimonials/{slug}'
+structure:
+  maxLevels: null
+  uid: 19a74f70-e6da-45e9-acf9-06fab9f9fe8c
+type: structure

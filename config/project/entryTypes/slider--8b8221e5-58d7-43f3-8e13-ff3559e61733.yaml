@@ -1,0 +1,53 @@
+color: null
+fieldLayouts:
+  9711d9e2-88d7-48eb-ab05-973a553c2dff:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-04T16:49:49+00:00'
+            elementCondition: null
+            fieldUid: f872b337-7e6b-41fc-9347-2f722d19098a # Section heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 27d7993f-ddb7-446b-9b1f-fa404bab4701
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-31T17:05:16+00:00'
+            elementCondition: null
+            fieldUid: c6d65337-e203-4774-8ae2-435e731da46e # Slides
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7530303a-5511-436f-baa6-6180087c9cd2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 2ab905c6-4f7a-493d-95de-586368385a65
+        userCondition: null
+handle: slider
+hasTitleField: false
+icon: null
+name: Slide
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

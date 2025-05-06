@@ -1,0 +1,82 @@
+defaultPlacement: end
+fieldLayouts:
+  47bcec44-a051-4367-ace9-a587c7550593:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-29T16:56:49+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 19ec86c4-034f-4e69-8ec2-41714f2c0ca0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-29T19:29:29+00:00'
+            elementCondition: null
+            fieldUid: ea817c34-179d-4093-a610-ec2c1a4b1cac # Category description
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dbff3b90-b4ab-43e5-9e35-140b3e13206f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-31T12:58:51+00:00'
+            elementCondition: null
+            fieldUid: 11e0fc69-749a-4920-a715-392b8d9f5d2b # Category image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 502e3cfb-7fbf-453e-a84c-31ee37d202aa
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c7317cb6-5cc4-44fe-b905-86b9717f107e
+        userCondition: null
+handle: work
+name: Work
+siteSettings:
+  44796fd5-bb11-438e-893b-74cd6f43996f: # Rebecca Luff
+    hasUrls: true
+    template: content/category-list
+    uriFormat: 'work/{slug}'
+structure:
+  maxLevels: null
+  uid: a3dc1c60-b58b-4ec1-9947-4fe5c971e258

@@ -1,0 +1,22 @@
+{# -- Root global variables that all templates inherit from -- #}
+{# -- This allows for defining site-wide Twig variables as needed -- #}
+{#
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                                                             │
+│                                                                             │
+│                                                                             │
+│                                  htmlPage                                   │
+└─────────────────────────────────────────────────────────────────────────────┘
+#}
+{% apply spaceless %}
+
+    {# -- General global variables -- #}
+    {% set baseUrl = alias('@baseUrl') ~ '/' %}
+    {% set gaTrackingId = getenv('GA_TRACKING_ID') %}
+
+
+    {# -- Twig output from the render; this must be in a block -- #}
+    {% block htmlPage %}
+    {% endblock %}
+
+{% endapply %}

@@ -1,0 +1,38 @@
+@import "bootstrap/scss/functions";
+
+@import "bootstrap/scss/mixins";
+
+// $info:orange !default;
+@import "custom_variables.scss";
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+) !default;
+// $font-family-sans-serif: "Noto Sans", serif;
+$font-family-sans-serif: "Open Sans";
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 1.8rem
+);
+
+
+@import "bootstrap/scss/bootstrap.scss";
+
+
+@import "custom.scss";
+// @import "../../node_modules/@picocss/pico/scss/pico";
+
+// /Users/alansparkes/sites/rluffcraft/node_modules/@picocss/pico/scss/pico.scss
+//Users/alansparkes/sites/rluffcraft/node_modules/bootstrap/scss/_grid.scss

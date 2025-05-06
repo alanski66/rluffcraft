@@ -1,0 +1,28 @@
+columnSuffix: null
+handle: contentBuilder
+instructions: null
+name: 'Content builder'
+searchable: false
+settings:
+  createButtonLabel: Add
+  defaultIndexViewMode: cards
+  entryTypes:
+    - 64ad5ce8-c3a8-4bce-b98b-2677ebf3ac78 # _Text
+    - 99639335-7fe8-46fe-bbde-b2f117aad2f6 # Image
+    - 994884b7-02f8-4488-9302-b1688ae96e6a # _Text with image
+    - dfbecf23-f0aa-4d69-9909-4d13e6bcae60 # _Blockquote
+    - 778b63af-ba35-4c6e-bc4e-4fa8764d54e3 # Url link
+    - e7472983-abd7-4164-9ee1-4e9ad5694afb # _Video
+    - 8b8221e5-58d7-43f3-8e13-ff3559e61733 # Slide
+    - 5e068733-e545-4667-8b60-515d9248b995 # _Contact form
+  includeTableView: false
+  maxEntries: null
+  minEntries: null
+  pageSize: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  showCardsInGrid: false
+  viewMode: blocks
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

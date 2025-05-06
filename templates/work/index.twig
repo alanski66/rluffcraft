@@ -1,0 +1,43 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+
+
+{% block content %}
+{% include('_partials/header-shallow')%}
+
+{% set myCategoryQuery = craft.categories()
+.group('work') %}
+{# Fetch the categories #}
+{% set categories = myCategoryQuery.all() %}
+
+<section class="py-5 d-flex">
+    <div class="container">
+        <div class="row">
+            {% for category in categories %}
+            {% set numofEntries = craft.entries.section('work').limit(null).relatedTo(category).count() %}
+            {% set catAsset = category.categoryImage.one() ?? null %}
+            <div class="col-md-6">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-info-emphasis">My work</strong>
+                        <h3 class="mb-0">{{ category.title }}</h3>
+
+                        <p class="mb-auto">{{ category.categoryDescription |raw }}</p>
+                        <a href="{{ category.url}}" class="icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                        </a>
+                    </div>
+                    {% if catAsset | length %}
+                   
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="{{catAsset.getUrl('square')}}" class="img-fluid">
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,66 @@
+altTranslationKeyFormat: null
+altTranslationMethod: none
+fieldLayouts:
+  ac887a10-afd2-4fce-8abf-ca7809d67f53:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2024-12-31T17:00:14+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\assets\AssetTitleField
+            uid: 6218871a-00f1-4c2b-a609-05ae494c8238
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2024-12-31T17:01:54+00:00'
+            elementCondition: null
+            fieldUid: ca12435c-7971-4a6f-ab00-234f50a5b60c # logo
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 964e8c6e-4259-4c76-a51f-3d06a546b625
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: cd0c9770-5719-4579-a0df-539b40a78c70
+        userCondition: null
+fs: organisationLogos
+handle: orgLogos
+name: 'Organisation logos'
+sortOrder: 2
+subpath: logos
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+transformFs: ''
+transformSubpath: logos

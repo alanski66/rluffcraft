@@ -1,0 +1,17 @@
+/config/license.key
+/config/license.key.1
+*.env.sh
+.env
+/.env
+.tt
+/.idea
+/vendor
+/public_html/assets
+public_html/assets
+node_modules/** 
+/node_modules/** 
+scripts/** 
+/scripts/** 
+/scripts/.env.sh
+.DS_Store
+config.codekit3

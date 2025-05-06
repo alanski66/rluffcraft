@@ -1,0 +1,12 @@
+columnSuffix: null
+handle: hide
+instructions: null
+name: Hide
+searchable: false
+settings:
+  default: false
+  offLabel: 'Off (Show)'
+  onLabel: 'ON (Hide)'
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

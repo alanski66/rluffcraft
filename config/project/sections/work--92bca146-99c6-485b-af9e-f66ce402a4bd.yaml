@@ -1,0 +1,30 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  - ebbb5274-bb4d-4943-9eb1-32bd320b8ad3 # Case study
+handle: work
+maxAuthors: 1
+name: 'My Work mini case studies'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - refresh
+        - '1'
+      -
+        - urlFormat
+        - '{url}'
+propagationMethod: all
+siteSettings:
+  44796fd5-bb11-438e-893b-74cd6f43996f: # Rebecca Luff
+    enabledByDefault: true
+    hasUrls: true
+    template: my-work/_entry.twig
+    uriFormat: '{% if object.level == 1 %}{category.inReverse().one().uri}/{slug}{% else %}{parent.uri}/{slug}{% endif %}'
+structure:
+  maxLevels: null
+  uid: 72024e99-29c3-4979-a2b9-1f79db7408ce
+type: structure

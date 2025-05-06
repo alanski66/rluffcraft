@@ -1,0 +1,60 @@
+fieldLayouts:
+  f2a91df4-7563-4095-bcb7-c8058e7aa350:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2025-01-08T15:39:31+00:00'
+            elementCondition: null
+            fieldUid: d7380970-42a0-4ec7-a316-3c598543fe40 # Hide
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ac9bf1c6-4873-4470-959a-82acd8e8d4aa
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-04T16:50:16+00:00'
+            elementCondition: null
+            fieldUid: f872b337-7e6b-41fc-9347-2f722d19098a # Section heading
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e35b1315-985d-4f43-9777-5572e45fb12c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-01-03T20:24:22+00:00'
+            elementCondition: null
+            fieldUid: c6d65337-e203-4774-8ae2-435e731da46e # Slides
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64f22d84-4a24-408a-849c-0f402cd85796
+            userCondition: null
+            warning: null
+            width: 100
+        name: Slide
+        uid: af9a7875-5628-4f4f-9967-0120256f103d
+        userCondition: null
+handle: orgSlider
+name: 'Organisation slider'
+sortOrder: 4

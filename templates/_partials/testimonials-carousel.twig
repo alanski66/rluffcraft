@@ -1,0 +1,60 @@
+{% import '_macros' as macros %}
+
+{% block content %}
+{% cache %}
+<!-- testimonials -->
+<section class="testimonials container-fluid bg-light bg-gradient pt-5 p-md-5">
+    <div class="container">
+        <h3 class="text-center fw-light">Testimonials</h3>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                {% set entries = craft.entries.section('testimonials').limit(20).all() %}
+                {% for entry in entries %}
+
+                {% set asset = entry.testimonialPhoto.one() ?? null %}
+                {% if asset|length %}
+
+                <div class="carousel-item   {% if loop.index  == 1%}active{% endif %}">
+                    <div class="col-12 col-lg-10 offset-lg-1 ">
+                        <div class="d-flex flex-column p-sm-2 p-md-5 text-center px-md-4" >
+                            <div class="user-image">
+                                <img src="{{asset.url}}" class="rounded-circle p-1 bg-info border shadow" width="80">
+                            </div>
+                            <div class="user-content  mx-md-4  mx-lg-2 mx-xl-5 text-start shadow">
+                                <div class="p-3  mt-3">
+                                    <h5 class="my-3 text-center">
+                                        <a class="link-offset-2 link-underline link-underline-opacity-0"
+                                            href="{{entry.linkedinProfileLink}}">{{entry.title}}</a>
+                                    </h5>
+                                    <div class="text-center fw-semibold mb-3">{{entry.organisation}}</div>
+                                    <div class="px-5 text-center">{{entry.quote}}</div>
+                                    <div class="ratings text-center">
+                                    <a class="link-offset-2 link-underline link-underline-opacity-0"
+                                        href="{{entry.linkedinProfileLink}}">
+                                        <img src="{{baseUrl}}assets/images/linkedin-logo-100.png" class="img-fluid"
+                                            width="20">
+                                    </a>
+
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+</section>
+{% endcache %}
+{% endblock %}
