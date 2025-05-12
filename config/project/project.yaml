@@ -1,4 +1,4 @@
-dateModified: 1738243732
+dateModified: 1746705651
 elementSources:
   craft\elements\Entry:
     -
@@ -254,7 +254,7 @@ plugins:
         - ''
         - ''
         - ''
-      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n{# Disallows #}\r\n{% if craft.app.config.env != 'production' %}\r\n\r\n{# Disallow access to everything when NOT in production #}\r\nUser-agent: *\r\nDisallow: /\r\n\r\n{% else %}\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n{% endif %}"
+      robotsTxt: "{# Sitemap URL #}\r\nSitemap: {{ url(seo.sitemapName ~ '.xml') }}\r\n\r\n\r\n\r\n{# Disallow access to cpresources/ when live #}\r\nUser-agent: *\r\nDisallow: /cpresources/\r\n\r\n"
       sitemapLimit: '1000'
       sitemapName: sitemap
       socialImage:
@@ -312,5 +312,5 @@ system:
   edition: solo
   live: true
   name: 'Rebecca Luff'
-  schemaVersion: 5.6.0.2
+  schemaVersion: 5.7.0.3
   timeZone: America/Los_Angeles

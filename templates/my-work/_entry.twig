@@ -20,6 +20,7 @@
 
         {% set asset = entry.image.one() ?? null %}
         {% set video = entry.mediaEmbed.one() ?? null %}
+        {% set mediaEmbed = entry.mediaEmbed.one() ?? null %}
 
         {# {% set asset = entry.embed.media.url ?? null %}
         {% do asset.setTransform('article') %}
@@ -73,20 +74,18 @@
             <div class="col-12 py-5 col-md-12 col-lg-5  justify-content-center align-items-center">
                 {% if video |length %}
                 {% set embeddedAsset = craft.embeddedAssets.get(video) %}
-                {% if embeddedAsset | length and embeddedAsset.type == "video" %}
-                <div class="ratio ratio-4x3">
-                    {{ embeddedAsset.html }}
-                </div>
-                {% endif %}
+                {# {{embeddedAsset.type}} #}
+                    {% if embeddedAsset | length and embeddedAsset.type == "video" %}
+                    <div class="ratio ratio-4x3">
+                        {{ embeddedAsset.html }}
+                    </div>
+                    {% endif %}
                 {% else %}
+                
                 <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset.url }}">
                 
                 {% endif %}
-            </div>
-
-            {# {% if asset | length %}
-            <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset }}">
-            {% endif %} #}
+            </div>      
 
         </div>
     </div>

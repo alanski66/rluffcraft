@@ -1,0 +1,6 @@
+<!-- block video -->
+{% if entry.embed.valid %}
+<div class="ratio ratio-16x9">
+    {{entry.embed.embed | raw}}
+</div>
+{% endif %}

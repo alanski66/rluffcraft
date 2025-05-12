@@ -1,0 +1,41 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+{% import '_macros' as macros %}
+
+{% block content %}
+    {%  set layout = null %}
+    <!--  pages/page Entry type Content -->
+    {%  if entry is defined %}
+
+        {# {% include '/_partials/hero-featured.twig' %} #}
+        {# {% include('_partials/header-shallow')%} #}
+{% cache %}
+        <section class="page pb-5 ">
+            <div class="container ">
+
+                <div class="row ">
+                    <div class="  col-12 col-md-10 offset-md-1  text-cente pt-2 pt-sm-5 position-relative">
+                           <h1 class="mb-3">{{entry.title}}</h1>
+                           {% if entry.body | length %}
+                           <div class="bg-white mt-5 "></div>
+                           {{entry.body }}
+                            </div>
+                           {% endif %} 
+                           
+                            {% for block in entry.contentBuilder.all() %}
+                            {% set blockPrefix = "" %}
+                            {% include ('blocks-blog/block_' ~ block.type.handle) %}
+
+                            {% endfor %} 
+                         
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+{% endcache %}
+
+    {%  endif %}
+
+{% endblock %}
