@@ -7,14 +7,21 @@
     {%  if entry is defined %}
 
         {# {% include '/_partials/hero-featured.twig' %} #}
-        {# {% include('_partials/header-shallow')%} #}
+        {% include('_partials/header-shallow')%}
 {% cache %}
         <section class="page pb-5 ">
             <div class="container ">
 
                 <div class="row ">
-                    <div class="  col-12 col-md-10 offset-md-1  text-cente pt-2 pt-sm-5 position-relative">
-                           <h1 class="mb-3">{{entry.title}}</h1>
+                    <div class="col-12 {% if entry.slug == "contact" %} col-md-6 offset-md-3 text-center {% endif %} pt-2 pt-sm-5 position-relative">
+                        {% if entry.slug == "contact" %}
+                            <img src="{{baseUrl}}assets/images/rebecca-trans-250x250.png" class="d-block mx-auto img-fluid rounded-circle bg-primary m-5" alt="Picture of Rebecca Luff" width="200" height="200">
+                            {% endif %}
+                        
+                            
+                            
+                         
+                           
                            {% if entry.body | length %}
                            <div class="bg-white mt-5 "></div>
                            {{entry.body }}
@@ -23,7 +30,7 @@
                            
                             {% for block in entry.contentBuilder.all() %}
                             {% set blockPrefix = "" %}
-                            {% include ('blocks-blog/block_' ~ block.type.handle) %}
+                            {% include ('blocks/block_' ~ block.type.handle) %}
 
                             {% endfor %} 
                          
