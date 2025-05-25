@@ -20,7 +20,7 @@
                 {% set asset = entry.image.eagerly().one() ?? null %}
 
 
-                {% if entry.image | length %}
+                {% if asset | length %}
                 {% set blogImage = {
                 mode: 'crop',
                 width: 880,

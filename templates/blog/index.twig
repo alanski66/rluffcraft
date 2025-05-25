@@ -35,7 +35,9 @@
                 <!-- image -->
                  <div class="col-12 col-md-12 col-lg-5 d-flex justify-content-end align-items-start mt-0 px-5">
                            {% set asset = entry.image.eagerly().one() ?? null %}
+                           {% if asset | length %}
                            <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset.getUrl('article') }}">
+                           {% endif %}
                 
                 </div>
             </div>
