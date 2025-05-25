@@ -1,0 +1,71 @@
+{% extends "_layouts/generic-page-layout.twig" %}
+{% import '_macros' as macros %}
+
+{% block content %}
+    {%  set layout = null %}
+    <!--  pages/page Entry type Content -->
+    {%  if entry is defined %}
+
+        {# {% include '/_partials/hero-featured.twig' %} #}
+        {% include('_partials/header-shallow')%}
+{% cache %}
+<section class="py-5 d-flex">
+    <div class="container">
+        <div class="row">
+
+            {% set blogs = craft.entries()
+                .section('blog')
+                .orderBy('postDate DESC') %}
+              
+              {# Paginate the query into a `posts` variable: #}
+              {% paginate blogs as pageInfo, blog %}
+              
+              {# Use the `posts` variable just like you would any other result set: #}
+              {% for entry in blogs %}
+
+            <div class="article loop{{loop.index}} row  flex-m-row  h-md-250 position-relative py-5 mb-5 shadow z-3">
+                <div class="col-12 col-md-12 col-lg-7 d-flex flex-column px-5">
+                    <h3 class="mb-">{{ entry.title }}</h3>
+
+                        <p class="lead mb-auto">{{ entry.intro |raw }}</p>
+                        <a href="{{ entry.url}}" class="d-non icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                        </a>
+                </div>
+                <!-- image -->
+                 <div class="col-12 col-md-12 col-lg-5 d-flex justify-content-end align-items-start mt-0 px-5">
+                           {% set asset = entry.image.eagerly().one() ?? null %}
+                           <img class="d-none d-lg-block img-fluid " loading="lazy" src="{{ asset.getUrl('article') }}">
+                
+                </div>
+            </div>
+            <div class="d-none col-md-6 ">
+                <div
+                    class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-info-emphasis">Blog</strong>
+                        <h3 class="mb-">{{ entry.title }}</h3>
+
+                        <p class="mb-auto">{{ entry.intro |raw }}</p>
+                        <a href="{{ entry.url}}" class="d-non icon-link gap-1 icon-link-hover stretched-link">
+                            Continue reading
+                        </a>
+                    </div>
+                    {% if entry.image.one() | length %}
+                   {% set asset = entry.image.one() %}
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="{{asset.getUrl('square')}}" class="img-fluid">
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+            
+{% endcache %}
+
+    {%  endif %}
+
+{% endblock %}

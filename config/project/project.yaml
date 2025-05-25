@@ -1,4 +1,4 @@
-dateModified: 1746705651
+dateModified: 1747065305
 elementSources:
   craft\elements\Entry:
     -
@@ -51,7 +51,19 @@ elementSources:
       heading: 'Channel content'
       type: heading
     -
+      defaultSort:
+        - postDate
+        - desc
+      defaultViewMode: ''
+      disabled: false
       key: 'section:9ba69d50-bfc9-42a4-a532-0dd623c5d252' # Blog
+      tableAttributes:
+        - status
+        - postDate
+        - expiryDate
+        - link
+        - 'field:381ca719-b0cc-4bba-9b7d-4f65f18f781f' # Image
+        - 'field:0a0a61db-c42b-49a9-b6cd-9a96be13752e' # Intro
       type: native
     -
       heading: Navigation
@@ -128,6 +140,7 @@ meta:
     5ce4c45c-4533-4cba-8c45-36bfee218660: 'Media embed' # Media embed
     5e068733-e545-4667-8b60-515d9248b995: '_Contact form' # _Contact form
     5ec282a8-339e-4230-83c8-3f37c13e0440: 'LinkedIn profile link' # LinkedIn profile link
+    7c06d5eb-a0c9-4660-b245-4a24e752b1a0: 'Single page index' # Single page index
     7cf846f7-68cf-4d25-8fee-b90dbbd98e2b: 'Organisation slider' # Organisation slider
     7db3c732-6d8a-49e9-9318-1568be796175: People # People
     7e6edf00-9a03-433e-9b9d-10784caaa4be: article # article
@@ -183,6 +196,7 @@ meta:
     dfbecf23-f0aa-4d69-9909-4d13e6bcae60: _Blockquote # _Blockquote
     e100ddb2-becd-489a-951b-0f9f370e60ff: Testimonials # Testimonials
     e38830f8-1fcf-495a-b446-d72cfabe43c3: Home # Home
+    e886603a-391a-4892-8437-e9aa3111444e: 'Blog index' # Blog index
     e7472983-abd7-4164-9ee1-4e9ad5694afb: _Video # _Video
     ea817c34-179d-4093-a610-ec2c1a4b1cac: 'Category description' # Category description
     ebbb5274-bb4d-4943-9eb1-32bd320b8ad3: 'Case study' # Case study

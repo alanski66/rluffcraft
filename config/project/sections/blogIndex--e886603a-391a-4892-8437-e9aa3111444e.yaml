@@ -2,10 +2,10 @@ defaultPlacement: end
 enableVersioning: true
 entryTypes:
   -
-    uid: 27fa1076-49b0-4d82-97c2-9b92351cce5a # page
-handle: blog
+    uid: 7c06d5eb-a0c9-4660-b245-4a24e752b1a0 # Single page index
+handle: blogIndex
 maxAuthors: 1
-name: Blog
+name: 'Blog index'
 previewTargets:
   -
     __assoc__:
@@ -23,6 +23,6 @@ siteSettings:
   44796fd5-bb11-438e-893b-74cd6f43996f: # Rebecca Luff
     enabledByDefault: true
     hasUrls: true
-    template: blog/_entry.twig
-    uriFormat: 'blog/{slug}'
-type: channel
+    template: blog/index.twig
+    uriFormat: blog
+type: single
